@@ -14,7 +14,7 @@
         ></div> -->
         <div
           class="bg-img"
-          style="background-image: url(/src/assets/img/yat1.jpg)"
+          style="background-image: url(/assets/img/yat1.jpg)"
         ></div>
         <div class="wrap">
           <div class="wrap_float js_height">
