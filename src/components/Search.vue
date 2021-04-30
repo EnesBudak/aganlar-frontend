@@ -228,7 +228,7 @@ export default {};
   background-color: var(--bg-orange-dark);
 }
 
-.center {
+.w-search-form .center {
   display: flex;
   align-items: center;
   justify-content: center;
