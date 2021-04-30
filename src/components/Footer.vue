@@ -75,13 +75,20 @@ export default {
   padding: 30px;
   color: #fff;
   bottom: 0;
-  position: absolute;
+  position: relative;
   display: flex;
   justify-content: center;
 }
+@media screen and (max-width: 1000px) {
+  .footer {
+    padding: 0 !important;
+  }
+}
+
 .footer {
   background-color: #fff;
   color: #0045a0;
+  padding: 0 !important;
 }
 .footer a {
   color: #0045a0 !important;
