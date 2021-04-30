@@ -11,7 +11,6 @@
               />
             </div>
             <div class="col">
-              <div class="_title m_title">Travel list</div>
               <ul>
                 <li>
                   <a href="travel-list-full-width.html">Ağanlar Group</a>
@@ -89,6 +88,9 @@ export default {
   background-color: #fff;
   color: #0045a0;
   padding: 0 !important;
+}
+.wrap_float {
+  margin: 30px;
 }
 .footer a {
   color: #0045a0 !important;
