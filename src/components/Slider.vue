@@ -26,9 +26,7 @@
                 Siz hayal edin, biz hayallerinizi gerçeğe dönüştürelim
               </p>
               <div class="buttons">
-                <a href="tour-page-right-sidebar.html" class="btn button"
-                  >Daha fazla...</a
-                >
+                <a href="#" class="btn button">Daha fazla...</a>
               </div>
               <div class="next_title">AGANLAR</div>
             </div>

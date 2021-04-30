@@ -1,5 +1,6 @@
 <template>
   <Slider />
+  <Search />
   <div class="page default travel-list full-width">
     <div class="page_head">
       <div class="wrap_float">
@@ -71,12 +72,14 @@
 <script>
 import { mapGetters } from "vuex";
 import Slider from "../components/Slider.vue";
+import Search from "../components/Search.vue";
 export default {
   computed: {
     ...mapGetters(["getYachts"]),
   },
   components: {
     Slider,
+    Search,
   },
 
   created() {

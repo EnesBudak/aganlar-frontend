@@ -6,16 +6,11 @@
           <h2 class="title">Haberler</h2>
           <!-- <p class="subtitle">Watch and be inspired</p> -->
           <div class="controls">
-            <a href="blog-right-sidebar.html" class="link">Tüm Haberler</a>
+            <a href="#" class="link">Tüm Haberler</a>
           </div>
         </div>
         <div class="section_content">
-          <a
-            v-for="i in 3"
-            :key="i"
-            href="blog-single-right-sidebar.html"
-            class="blog_item"
-          >
+          <a v-for="i in 3" :key="i" href="#" class="blog_item">
             <div
               class="blog_item_top"
               style="background-image: url(img/demo-bg.jpg)"

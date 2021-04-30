@@ -27,7 +27,7 @@
                 <div class="item_left">
                   <div
                     class="image"
-                    style="background-image: url('/src/assets/img/yat1.jpg')"
+                    style="background-image: url('/assets/img/yat1.jpg')"
                   >
                     <div
                       class="shadow js-shadow"

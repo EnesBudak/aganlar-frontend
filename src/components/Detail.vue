@@ -2,7 +2,7 @@
   <div class="tour_page right-sidebar">
     <div
       class="tour_page_head"
-      style="background-image: url('/src/assets/img/yat1.jpg')"
+      style="background-image: url('/assets/img/yat1.jpg')"
     >
       <div class="breadcrumbs">
         <div class="wrap">
