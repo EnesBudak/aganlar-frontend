@@ -3,7 +3,7 @@
     <div class="wrap">
       <div class="wrap_float">
         <div class="footer_top">
-          <div>
+          <div class="left">
             <div class="col">
               <img
                 src="https://yatvilla.com/hackyfte/2021/03/footer-logos-1.png"
@@ -27,7 +27,7 @@
                 <li><a href="search-results.html">Logolarımız</a></li>
               </ul>
             </div>
-            <div class="col">
+            <div class="col" style="margin-bottom: 10%">
               <div class="_title">İletişim</div>
               <div class="contacts_info">
                 <div class="tel">
@@ -41,13 +41,18 @@
                 United States
               </div> -->
               </div>
-              <div class="socials social-links">
-                <a href="#" class="link facebook"><span></span></a>
-                <a href="#" class="link instagram"><span></span></a>
-                <a href="#" class="link pinterest"><span></span></a>
-                <a href="#" class="link twitter"><span></span></a>
-                <a href="#" class="link youtube"><span></span></a>
-              </div>
+            </div>
+          </div>
+          <div class="right" style="margin-bottom: 10%">
+            <div class="col">
+              <h2>Aganları Takip Edin!</h2>
+            </div>
+
+            <div class="socials social-links" style="margin-top: 10%">
+              <a href="#" class="link facebook"><span></span></a>
+              <a href="#" class="link instagram"><span></span></a>
+              <a href="#" class="link pinterest"><span></span></a>
+              <a href="#" class="link youtube"><span></span></a>
             </div>
           </div>
         </div>
