@@ -1,81 +1,41 @@
 <template>
-  <div style="margin: 50px">
-    <div class="stories_list" style="display: flex; justify-content: center">
-      <a
-        @click="$router.push('/teknelerimiz')"
-        href="#"
-        class="story_item"
-        style="
-          background-image: url(https://villauploads.s3.amazonaws.com/1619464229412.png);
-        "
-      >
-        <div class="item_wrap">
-          <div class="_content">
-            <div class="flag_wrap">
-              <div class="flag"></div>
-            </div>
-            <h3 class="country">Yachts</h3>
-            <p class="text">Amazing underwater world</p>
+  <div class="page default travel-list full-width" style="margin-top: 5%">
+    <div class="page_body">
+      <div class="wrap">
+        <div class="wrap_float">
+          <div class="posts">
+            <a
+              v-for="category in categories"
+              :key="category"
+              :href="category.url"
+              class="tour_item"
+              :style="[
+                category.imgUrl !== ''
+                  ? {
+                      'background-image': 'url(' + category.imageUrl + ')',
+                    }
+                  : { background: 'url(img/yat.jpg) center no-repeat' },
+              ]"
+            >
+              <div class="tour_item_bottom">
+                <h3 class="_title">{{ category.name }}</h3>
+                <div class="_info">
+                  <div class="_info_left">
+                    <div class="cost">Detaylar için tıklayın!</div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="shadow js-shadow"
+                style="background-image: url(img/tour-item-1.jpg)"
+              ></div>
+            </a>
           </div>
         </div>
-        <div class="shadow js-shadow"></div>
-      </a>
-      <a
-        :href="'marina'"
-        class="story_item"
-        style="
-          background-image: url(https://villauploads.s3.amazonaws.com/1619470430570.png);
-        "
-      >
-        <div class="item_wrap">
-          <div class="_content">
-            <div class="flag_wrap">
-              <div class="flag"></div>
-            </div>
-            <h3 class="country">Marina</h3>
-            <p class="text">Amazing underwater world</p>
-          </div>
-        </div>
-        <div class="shadow js-shadow"></div>
-      </a>
-      <a
-        @click="$router.push('/brokerage')"
-        class="story_item"
-        style="
-          background-image: url(https://villauploads.s3.amazonaws.com/1619470442781.png);
-        "
-      >
-        <div class="item_wrap">
-          <div class="_content">
-            <div class="flag_wrap">
-              <div class="flag"></div>
-            </div>
-            <h3 class="country">Brokerage</h3>
-            <p class="text">Amazing underwater world</p>
-          </div>
-        </div>
-        <div class="shadow js-shadow"></div>
-      </a>
-      <a
-        @click="$router.push('/insurance')"
-        class="story_item"
-        style="
-          background-image: url(https://villauploads.s3.amazonaws.com/1619470454523.png);
-        "
-      >
-        <div class="item_wrap">
-          <div class="_content">
-            <div class="flag_wrap">
-              <div class="flag"></div>
-            </div>
-            <h3 class="country">Insurance</h3>
-            <p class="text">Amazing underwater world</p>
-          </div>
-        </div>
-        <div class="shadow js-shadow"></div>
-      </a>
+      </div>
     </div>
   </div>
+
   <BlogPost />
   <!-- <div class="destinations">
     <div class="wrap">
@@ -136,7 +96,32 @@ export default {
   },
 
   data() {
-    return {};
+    return {
+      categories: [
+        {
+          name: "Yachts",
+          url: "teknelerimiz",
+          imageUrl: "https://yatvilla.com/hackyfte/2021/03/home-yaht-new.png",
+        },
+        {
+          name: "Marina",
+          url: "marina",
+          imageUrl: "https://yatvilla.com/hackyfte/2021/03/home-marina-new.png",
+        },
+        {
+          name: "Brokerage",
+          url: "brokerage",
+          imageUrl:
+            "https://yatvilla.com/hackyfte/2021/03/home-brokerage-new.png",
+        },
+        {
+          name: "Insurance",
+          url: "insurance",
+          imageUrl:
+            "https://yatvilla.com/hackyfte/2021/03/home-insurance-new.png",
+        },
+      ],
+    };
   },
 };
 </script>
