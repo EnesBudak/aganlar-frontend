@@ -11,6 +11,11 @@
                   <ul>
                     <li>
                       <a href="/teknelerimiz">
+                        <h2>ERAYY ERSENNN</h2>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="/teknelerimiz">
                         <img
                           src="https://yatvilla.com/hackyfte/2021/03/header-yacht.png"
                           alt=""
