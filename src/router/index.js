@@ -6,6 +6,13 @@ import Brokerage from "../views/Brokerage.vue";
 import Marina from "../views/Marina.vue";
 import Servisler from "../views/Servisler.vue";
 import Insurance from "../views/Insurance.vue";
+import Projects from "../views/Projects.vue";
+import Tersanemiz from "../views/Tersanemiz.vue";
+import YatLift from "../views/YatLift.vue";
+import ContinuingProjects from '../views/ContiuningProjects.vue'
+import newProjects from '../views/newProjects.vue'
+import Refit from '../views/Refit.vue'
+import YachtsTamir from '../views/YachtsTamir.vue'
 import BrokerageRent from "../views/BrokerageRent.vue";
 import BrokerageSell from "../views/BrokerageSell.vue";
 import Detail from '../views/Detail.vue'
@@ -60,7 +67,42 @@ const routes = [
     name: "Detail",
     component: Detail,
   },
- 
+  {
+    path: "/projelerimiz",
+    name: "Projelerimiz",
+    component: Projects,
+  },
+  {
+    path: "/continuingprojects",
+    name: "ContinuingProjects",
+    component: ContinuingProjects,
+  },
+  {
+    path: "/newprojects",
+    name: "NewProjects",
+    component: newProjects,
+  },
+  {
+    path: "/yachtstamir",
+    name: "YachtsTamir",
+    component: YachtsTamir,
+  },
+  {
+    path: "/tersanemiz",
+    name: "Tersanemiz",
+    component: Tersanemiz,
+  },
+  {
+    path: "/yatlift",
+    name: "YatLift",
+    component: YatLift,
+  },
+  {
+    path: "/refit",
+    name: "Refit",
+    component: Refit,
+  },
+  
   // {
   //   path: "/detail/:id",
   //   name: "Detail",

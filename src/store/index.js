@@ -54,7 +54,6 @@ const mutations = {
 const actions = {
   async getYachts({commit},payload){
    try {
-     console.log("calisti");
      console.log(payload,"payload");
     const {data} =  await axios.get(`/yacht/?${payload}`)
     console.log("dataaa");

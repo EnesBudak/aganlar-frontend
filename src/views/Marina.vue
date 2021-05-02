@@ -90,6 +90,14 @@ export default {
             "https://yatvilla.com/hackyfte/2021/03/marina-index-img-1.png",
         },
         {
+          name: "Yat Lift",
+          content:
+            "Ege Bölgesi'nin en büyük travellift'lerinden birini içeren yat lift bölümüzde en uygun çekek hizmetlerimizi bulabilirsiniz.",
+          url: "yatlift",
+          imageUrl:
+            "https://www.aganlar.com/Content/Themes/images/marina-index-img-2.png",
+        },
+        {
           name: "Rezervasyon",
           content:
             "Yat rezervasyon işlemleriniz için formu doldurun, size ulaşalım. Ağanlar Marina ile ilgili ihtiyacınız olan konuda rezervasyon yaptırın, konuyla ilgili deneyimli ekibimiz hemen sizinle iletişime geçsin.",

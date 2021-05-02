@@ -27,7 +27,7 @@
                 <div class="item_left">
                   <div
                     class="image"
-                    style="background-image: url('/assets/img/yat1.jpg')"
+                    :style="'background-image: url(' + category.imageUrl + ')'"
                   >
                     <div
                       class="shadow js-shadow"
@@ -75,28 +75,44 @@ export default {
     return {
       yatchsCategories: [
         {
-          name: "Tersanemiz",
+          name: "TERSANEMİZ",
           content:
             "450 ton kapasitesiyle Türkiye’nin en yüksek taşıma hacmine sahip travellift’i ile hizmet veren marinamızda tekne ihtiyaçlarınızı karşılıyor, farklı boyutlardaki tekne siparişlerinizde “anahtar teslim” hizmetimizle hayallerinizi gerçeğe dönüştürüyoruz.",
-          url: "",
+          url: "tersanemiz",
+          imageUrl:
+            "http://aganlar.com/Content/Themes/images/yachts-index-img-1.png",
         },
         {
           name: "TEKNELERİMİZ",
           content:
             "Tamamladığımız her yat, kendi seyir defterini oluşturmak için Bodrum’dan çıkıyor yola. Şimdiye kadar tamamladığımız eşsiz yat tasarımlarını buradan inceleyebilirsiniz",
-          url: "yacht",
+          url: "yacht/?type=normal",
+          imageUrl:
+            "http://aganlar.com/Content/Themes/images/yachts-index-img-2.png",
         },
         {
           name: "PROJELERİMİZ",
           content:
             "Yeni başlanan her üretim yolculuğunda mükemmel denge ve eşsiz tasarımı el işçiliğiyle kurguluyoruz. Devam eden projelerimizi buradan inceleyebilirsiniz.",
-          url: "",
+          url: "projelerimiz",
+          imageUrl:
+            "http://aganlar.com/Content/Themes/images/yachts-index-img-3.png",
         },
         {
           name: "TAMİR VE YENİLEME",
           content:
             "34.000 m2’lik tersanemizde, 80 çalışanımızla, yılda 500’e yakın tamir ve yenileme operasyonunu üstleniyoruz. Yaptığımız tüm çalışmalar üst düzey kalite standartlarını yakalayabilmemiz adına uluslararası klas firmaları ve bayrak devleti sörveyleri tarafından kontrol edilip onaylanıyor",
-          url: "",
+          url: "yachtstamir",
+          imageUrl:
+            "http://aganlar.com/Content/Themes/images/yachts-index-img-5.png",
+        },
+        {
+          name: "REFİT PORTFOLIO",
+          content:
+            "Bazen küçük bir dokunuş değiştirir bir yatın tüm duruşunu. Ağanlar dokunuşuyla tamir edilen yatları buradan inceleyebilirsiniz.",
+          imageUrl:
+            "http://aganlar.com/Content/Themes/images/ycht-index-refit.png",
+          url: "refit/?type=refit",
         },
       ],
     };
