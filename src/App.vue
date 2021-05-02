@@ -32,9 +32,20 @@ export default {
 }
 .main_slider .slider_wrap .slide .bg-img {
   height: 100%;
+  transform: none !important;
+  opacity: 1 !important;
 }
 
 .main_slider {
-  height: 75vh;
+  height: 100vh;
+}
+.main_slider .slider_wrap .slide .slide_content .text {
+  color: #fff;
+  text-shadow: 1px 1px rgba(0, 0, 0, 0.75);
+  line-height: 46px;
+  font-size: 36px;
+  max-width: 565px;
+  clear: both;
+  transform: none;
 }
 </style>

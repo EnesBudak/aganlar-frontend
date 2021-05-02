@@ -9,6 +9,7 @@ import Insurance from "../views/Insurance.vue";
 import Projects from "../views/Projects.vue";
 import Tersanemiz from "../views/Tersanemiz.vue";
 import YatLift from "../views/YatLift.vue";
+import Contact from "../views/Contact.vue";
 import ContinuingProjects from '../views/ContiuningProjects.vue'
 import newProjects from '../views/newProjects.vue'
 import Refit from '../views/Refit.vue'
@@ -101,6 +102,11 @@ const routes = [
     path: "/refit",
     name: "Refit",
     component: Refit,
+  },
+  {
+    path: "/contact",
+    name: "Contact",
+    component: Contact,
   },
   
   // {

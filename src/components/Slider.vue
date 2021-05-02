@@ -14,7 +14,7 @@
         ></div> -->
         <div
           class="bg-img"
-          style="background-image: url(/assets/img/yat1.jpg)"
+          style="background-image: url(/assets/img/yatreal2.png)"
         ></div>
         <div class="wrap">
           <div class="wrap_float js_height">
@@ -25,8 +25,11 @@
               <p class="text">
                 Siz hayal edin, biz hayallerinizi gerçeğe dönüştürelim
               </p>
+
               <div class="buttons">
-                <a href="#" class="btn button">Daha fazla...</a>
+                <a href="contact" class="btn button" tabindex="0"
+                  >İletişime Geç!</a
+                >
               </div>
               <div class="next_title">AGANLAR</div>
             </div>

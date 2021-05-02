@@ -28,13 +28,22 @@
               </ul>
             </div>
             <div class="col" style="margin-bottom: 10%">
-              <div class="_title">İletişim</div>
-              <div class="contacts_info">
+              <div class="_title"></div>
+              <div class="contacts_info" style="line-height: 2rem">
                 <div class="tel">
+                  Telefon
+                  <br />
                   <a href="tel:+90252444480">+90 (252) 444 4 808</a>
                 </div>
+                <div class="tel">
+                  Fax
+                  <br />
+                  <a href="tel:+902523138766">+90 (252) 313 87 66</a>
+                </div>
                 <div class="email">
-                  <a href="mailto:info@aganlar.com<">info@aganlar.com</a>
+                  Email
+                  <br />
+                  <a href="mailto:info@aganlar.com">info@aganlar.com</a>
                 </div>
                 <!-- <div class="address">
                 1355 Digistrict St, Suite 909 San, Francisco, CA 10001 <br />
@@ -43,7 +52,7 @@
               </div>
             </div>
           </div>
-          <div class="right" style="margin-bottom: 10%">
+          <div class="right" style="margin-top: 2rem">
             <div class="col">
               <h2>Aganları Takip Edin!</h2>
             </div>

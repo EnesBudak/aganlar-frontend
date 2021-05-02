@@ -114,6 +114,14 @@ export default {
             "http://aganlar.com/Content/Themes/images/ycht-index-refit.png",
           url: "refit/?type=refit",
         },
+        {
+          name: "İLETİŞİM",
+          content:
+            "Bazen küçük bir dokunuş değiştirir bir yatın tüm duruşunu. Ağanlar dokunuşuyla tamir edilen yatları buradan inceleyebilirsiniz.",
+          imageUrl:
+            "http://aganlar.com/Content/Themes/images/yachts-index-banner-new.png",
+          url: "contact",
+        },
       ],
     };
   },

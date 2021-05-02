@@ -106,10 +106,10 @@ export default {
             "https://yatvilla.com/hackyfte/2021/03/marina-index-img-4.png",
         },
         {
-          name: "İletişim",
+          name: "İLETİŞİM",
           content: "N 37° 00´ 49.10E 27° 27´ 04.44VHF: 72 info@aganlar.com",
-          url: "",
           imageUrl: "https://yatvilla.com/hackyfte/2021/03/lokasyon-img.png",
+          url: "contact",
         },
       ],
     };
