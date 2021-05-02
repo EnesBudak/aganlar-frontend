@@ -27,8 +27,16 @@
                 <div class="item_left">
                   <div
                     class="image"
-                    style="background-image: url('/assets/img/yat1.jpg')"
+                    :style="[
+                      category.imgUrl !== ''
+                        ? {
+                            'background-image':
+                              'url(' + category.imageUrl + ')',
+                          }
+                        : { background: 'url(img/yat.jpg) center no-repeat' },
+                    ]"
                   >
+                    >
                     <div
                       class="shadow js-shadow"
                       style="background-image: url(img/tour-item-1.jpg)"
@@ -79,24 +87,30 @@ export default {
           content:
             "Uzunluk, fiyat, tip, kapasite… Tercihlerinize en uygun yata burada karar verin.",
           url: "/brokerage/sell",
+          imageUrl:
+            "http://aganlar.com/Content/Themes/images/brokerage-index-img-1-new.jpg",
         },
         {
           name: "Kiralık Yatlar",
           content:
             "İster denemek, ister öğrenmek, isterseniz de uzun soluklu yolculuklarınız için kiralama seçenekleri.",
           url: "/brokerage/rent",
+          imageUrl:
+            "http://aganlar.com/Content/Themes/images/brokerage-index-img-2.png",
         },
         {
           name: "Rotalar",
           content:
             "Bodrum’un maviliğine doğru atacağınız her adımda ruhunuz yenilenecek.",
           url: "",
+          imageUrl:
+            "http://aganlar.com/Content/Themes/images/brokerage-index-rotalar-img.png",
         },
         {
-          name: "İletişim",
-          content:
-            "34.000 m2’lik tersanemizde, 80 çalışanımızla, yılda 500’e yakın tamir ve yenileme operasyonunu üstleniyoruz. Yaptığımız tüm çalışmalar üst düzey kalite standartlarını yakalayabilmemiz adına uluslararası klas firmaları ve bayrak devleti sörveyleri tarafından kontrol edilip onaylanıyor",
-          url: "",
+          name: "İLETİŞİM",
+          content: "N 37° 00´ 49.10E 27° 27´ 04.44VHF: 72 info@aganlar.com",
+          imageUrl: "https://yatvilla.com/hackyfte/2021/03/lokasyon-img.png",
+          url: "contact",
         },
       ],
     };
