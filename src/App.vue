@@ -16,9 +16,6 @@ export default {
     Header,
     Footer,
   },
-  created() {
-    this.$store.dispatch("getYachts");
-  },
 };
 </script>
 

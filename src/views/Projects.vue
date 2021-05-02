@@ -26,10 +26,6 @@
                   </div>
                 </div>
               </div>
-              <div
-                class="shadow js-shadow"
-                style="background-image: url(img/tour-item-1.jpg)"
-              ></div>
             </a>
           </div>
         </div>

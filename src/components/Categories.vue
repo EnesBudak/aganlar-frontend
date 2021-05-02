@@ -1,8 +1,8 @@
 <template>
   <div class="page default travel-list full-width" style="margin-top: 5%">
     <div class="page_body">
-      <div class="wrap">
-        <div class="wrap_float">
+      <div class="wrap_float">
+        <div class="wrap">
           <div class="posts">
             <a
               v-for="category in categories"
@@ -25,10 +25,6 @@
                   </div>
                 </div>
               </div>
-              <div
-                class="shadow js-shadow"
-                style="background-image: url(img/tour-item-1.jpg)"
-              ></div>
             </a>
           </div>
         </div>

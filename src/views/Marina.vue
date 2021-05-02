@@ -33,14 +33,9 @@
                             'background-image':
                               'url(' + category.imageUrl + ')',
                           }
-                        : { background: 'url(img/yat.jpg) center no-repeat' },
+                        : 'background-image:url(/asset/img/yat.jpg) center no-repeat',
                     ]"
-                  >
-                    <div
-                      class="shadow js-shadow"
-                      style="background-image: url(img/tour-item-1.jpg)"
-                    ></div>
-                  </div>
+                  ></div>
                 </div>
                 <div class="item_right">
                   <!-- <p class="country">North Africa</p> -->

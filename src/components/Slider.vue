@@ -1,17 +1,7 @@
 <template>
   <div class="main_slider js_height">
     <div class="slider_wrap" id="main_slider_wrap">
-      <div class="slide" v-for="yacht in getYachts" :key="yacht.id">
-        <!-- <div
-          class="bg-img"
-          :style="[
-            yacht.imgUrl !== ''
-              ? {
-                  'background-image': 'url(' + yacht.imageUrl + ')',
-                }
-              : { background: 'url(img/yat.jpg) center no-repeat' },
-          ]"
-        ></div> -->
+      <div class="slide">
         <div
           class="bg-img"
           style="background-image: url(/assets/img/yatreal2.png)"
@@ -23,12 +13,19 @@
                 <h4 class="slide_title">AGANLAR</h4>
               </div>
               <p class="text">
-                Siz hayal edin, biz hayallerinizi gerçeğe dönüştürelim
+                {{
+                  title == null
+                    ? "Siz hayal edin, biz hayallerinizi gerçeğe dönüştürelim"
+                    : title
+                }}
               </p>
 
               <div class="buttons">
-                <a href="contact" class="btn button" tabindex="0"
-                  >İletişime Geç!</a
+                <a
+                  :href="url == null ? 'contact' : url"
+                  class="btn button"
+                  tabindex="0"
+                  >{{ buttonTitle == null ? "İletişime Geç" : buttonTitle }}</a
                 >
               </div>
               <div class="next_title">AGANLAR</div>
@@ -47,9 +44,13 @@ export default {
   components: {
     Search,
   },
-  computed: {
-    ...mapGetters(["getYachts"]),
-  },
+  props: ["title", "url", "buttonTitle"],
+  // computed: {
+  //   ...mapGetters(["getYachts"]),
+  // },
+  // created() {
+  //   this.$store.dispatch("getYachts");
+  // },
 };
 </script>
 
