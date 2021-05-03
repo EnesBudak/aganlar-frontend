@@ -20,11 +20,18 @@
           <div class="left_content">
             <div class="posts">
               <a
-                v-for="category in yatchsCategories"
+                v-for="(category, index) in yatchsCategories"
                 :key="category"
                 class="item"
               >
-                <div class="item_left">
+                <div
+                  class="item_left"
+                  :style="
+                    index % 2 == 0
+                      ? 'float:left !important;margin-right:20px'
+                      : 'float:right !important'
+                  "
+                >
                   <div
                     class="image"
                     :style="[
@@ -37,7 +44,14 @@
                     ]"
                   ></div>
                 </div>
-                <div class="item_right">
+                <div
+                  class="item_right"
+                  :style="
+                    index % 2 !== 0
+                      ? 'float:right !important;margin-right:20px'
+                      : 'float:left !important'
+                  "
+                >
                   <!-- <p class="country">North Africa</p> -->
 
                   <h3 class="item_title">{{ category.name }}</h3>
@@ -46,16 +60,6 @@
                   </p>
                 </div>
               </a>
-            </div>
-            <div class="pagination">
-              <a class="arrow prev"></a>
-              <ul>
-                <li><a href="#" class="active">1</a></li>
-                <li><a href="#">2</a></li>
-                <li><a href="#">3</a></li>
-                <li><a href="#">4</a></li>
-              </ul>
-              <a class="arrow next"></a>
             </div>
           </div>
         </div>

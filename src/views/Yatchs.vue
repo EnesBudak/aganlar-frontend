@@ -32,10 +32,14 @@
                       : 'float:right !important'
                   "
                 >
-                  <div
-                    class="image"
-                    :style="'background-image: url(' + category.imageUrl + ')'"
-                  ></div>
+                  <a :href="category.url" class="arrow next">
+                    <div
+                      class="image"
+                      :style="
+                        'background-image: url(' + category.imageUrl + ')'
+                      "
+                    ></div>
+                  </a>
                 </div>
                 <div
                   class="item_right"
@@ -51,9 +55,6 @@
                   <p class="item_text">
                     {{ category.content }}
                   </p>
-                  <div class="pagination">
-                    <a :href="category.url" class="arrow next"></a>
-                  </div>
                 </div>
               </a>
             </div>
