@@ -45,4 +45,13 @@ export default {
   clear: both;
   transform: none;
 }
+.travel-list .posts .item_right {
+  max-width: 45%;
+}
+.travel-list .posts .item_left {
+  max-width: 50%;
+}
+.page .left_content {
+  max-width: 100%;
+}
 </style>
