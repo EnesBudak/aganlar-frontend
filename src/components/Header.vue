@@ -1,6 +1,27 @@
 <template>
   <div>
-    <div class="top_header"></div>
+    <div class="top_header">
+      <div class="right">
+        <div class="socials social-links top_logo">
+          <a
+            href="https://www.facebook.com/Aganlar-Shipyard-Marina-495465727226594/"
+            class="link facebook"
+            ><span></span
+          ></a>
+          <a href="https://twitter.com/aganlar" class="link twitter"
+            ><span></span
+          ></a>
+          <a href="https://www.instagram.com/aganlar" class="link instagram"
+            ><span></span
+          ></a>
+          <a
+            href="https://www.youtube.com/channel/UCtq-tKx_on2xNE5zDL1BV1Q"
+            class="link youtube"
+            ><span></span
+          ></a>
+        </div>
+      </div>
+    </div>
     <div class="top_panel">
       <div class="wrap">
         <div class="wrap_float">
@@ -151,6 +172,10 @@ export default {};
   color: black;
 }
 
+.top_logo a {
+  height: 0px !important;
+  margin: 20px !important;
+}
 @media screen and (max-width: 640px) {
   .top_panel {
     background-color: transparent;
