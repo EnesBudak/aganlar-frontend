@@ -31,6 +31,11 @@
                 <div class="menu">
                   <ul>
                     <li>
+                      <a @click="showInfo = !showInfo" style="width: 250px"
+                        >Hakkımızda</a
+                      >
+                    </li>
+                    <li>
                       <a href="/teknelerimiz">
                         <img
                           src="https://yatvilla.com/hackyfte/2021/03/header-yacht.png"
@@ -88,6 +93,36 @@
                     </div>
                   </div>
                 </div>
+                <transition name="fade">
+                  <div class="menu" v-show="showInfo">
+                    <ul>
+                      <li>
+                        <a href="/teknelerimiz" class="hideBarButton">
+                          Aganlar Group
+                        </a>
+                      </li>
+                      <li>
+                        <a href="/marina" class="hideBarButton"> Erol Ağan </a>
+                      </li>
+                      <li>
+                        <a href="/" class="hideBarButton"> Basında Biz </a>
+                      </li>
+                      <li>
+                        <a href="/brokerage" class="hideBarButton"> Kalite </a>
+                      </li>
+                      <li>
+                        <a href="/insurance" class="hideBarButton"> Haberler</a>
+                      </li>
+                      <li>
+                        <a href="/insurance" class="hideBarButton"> Blog</a>
+                      </li>
+                      <li>
+                        <a href="/insurance" class="hideBarButton"> İletişim</a>
+                      </li>
+                    </ul>
+                  </div>
+                </transition>
+
                 <div class="close" id="menu-close">
                   <span></span>
                   <span></span>
@@ -149,10 +184,33 @@
 </template>
 
 <script>
-export default {};
+export default {
+  data() {
+    return {
+      showInfo: false,
+    };
+  },
+};
 </script>
 
 <style>
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 0.5s ease;
+}
+.hideBarButton {
+  height: 60px;
+}
+
+.hideBarButton:hover {
+  border-bottom: 3px solid #41a3ff !important;
+}
+
+.fade-enter-from,
+.fade-leave-to {
+  opacity: 0;
+  transform-style: opacity 1s ease;
+}
 .top_panel {
   background-color: #fff;
 }
@@ -161,6 +219,12 @@ export default {};
   display: flex;
   align-items: center;
   justify-content: center;
+}
+.top_panel .menu_wrap {
+  width: auto;
+}
+.menu_wrap a:first-child {
+  color: #000 !important;
 }
 .top_header {
   width: 100%;
