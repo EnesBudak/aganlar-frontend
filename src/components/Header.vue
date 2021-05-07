@@ -97,27 +97,31 @@
                   <div class="menu" v-show="showInfo">
                     <ul>
                       <li>
-                        <a href="/teknelerimiz" class="hideBarButton">
+                        <a href="/hakkimizda" class="hideBarButton">
                           Aganlar Group
                         </a>
                       </li>
                       <li>
-                        <a href="/marina" class="hideBarButton"> Erol Ağan </a>
+                        <a href="/erolagan" class="hideBarButton">
+                          Erol Ağan
+                        </a>
                       </li>
                       <li>
-                        <a href="/" class="hideBarButton"> Basında Biz </a>
+                        <a href="/basindabiz" class="hideBarButton">
+                          Basında Biz
+                        </a>
                       </li>
                       <li>
-                        <a href="/brokerage" class="hideBarButton"> Kalite </a>
+                        <a href="/kalite" class="hideBarButton"> Kalite </a>
                       </li>
                       <li>
-                        <a href="/insurance" class="hideBarButton"> Haberler</a>
+                        <a href="/blog" class="hideBarButton"> Blog</a>
                       </li>
                       <li>
-                        <a href="/insurance" class="hideBarButton"> Blog</a>
+                        <a href="/haberler" class="hideBarButton"> Haberler</a>
                       </li>
                       <li>
-                        <a href="/insurance" class="hideBarButton"> İletişim</a>
+                        <a href="/contact" class="hideBarButton"> İletişim</a>
                       </li>
                     </ul>
                   </div>

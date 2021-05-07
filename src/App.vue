@@ -33,9 +33,6 @@ export default {
   opacity: 1 !important;
 }
 
-.main_slider {
-  height: 100vh;
-}
 .main_slider .slider_wrap .slide .slide_content .text {
   color: #fff;
   text-shadow: 1px 1px rgba(0, 0, 0, 0.75);

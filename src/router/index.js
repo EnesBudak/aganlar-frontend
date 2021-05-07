@@ -8,6 +8,12 @@ import Servisler from "../views/Servisler.vue";
 import Insurance from "../views/Insurance.vue";
 import Projects from "../views/Projects.vue";
 import Tersanemiz from "../views/Tersanemiz.vue";
+import Hakkimizda from "../views/Hakkimizda.vue";
+import ErolAgan from "../views/ErolAgan.vue";
+import Kalite from "../views/Kalite.vue";
+import Blog from "../views/Blog.vue";
+import Haberler from "../views/Haberler.vue";
+import BasindaBiz from "../views/BasindaBiz.vue";
 import YatLift from "../views/YatLift.vue";
 import Contact from "../views/Contact.vue";
 import ContinuingProjects from '../views/ContiuningProjects.vue'
@@ -108,6 +114,37 @@ const routes = [
     name: "Contact",
     component: Contact,
   },
+  {
+    path: "/hakkimizda",
+    name: "Hakkimizda",
+    component: Hakkimizda,
+  },
+  {
+    path: "/erolagan",
+    name: "ErolAgan",
+    component: ErolAgan,
+  },
+  {
+    path: "/basindabiz",
+    name: "BasindaBiz",
+    component: BasindaBiz,
+  },
+  {
+    path: "/kalite",
+    name: "Kalite",
+    component: Kalite,
+  },
+  {
+    path: "/blog",
+    name: "Blog",
+    component: Blog,
+  },
+  {
+    path: "/haberler",
+    name: "Haberler",
+    component: Haberler,
+  },
+  
   
   // {
   //   path: "/detail/:id",
