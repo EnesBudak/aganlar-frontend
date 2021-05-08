@@ -151,38 +151,6 @@
           </div>
         </div>
       </div>
-      <div class="popup login" id="login">
-        <div class="scroll">
-          <div class="scroll_wrap">
-            <div class="popup-head">
-              <div class="title">Sign In</div>
-              <a class="link js-popup-open" data-href="#registration"
-                >Sign Up</a
-              >
-            </div>
-            <div class="popup-body">
-              <div class="subtitle">
-                Use the e-mail and password that you specified when registering
-                on the site
-              </div>
-              <div class="form">
-                <input type="text" class="input" placeholder="Login" />
-                <input type="text" class="input" placeholder="Password" />
-                <button class="submit button">Sign In</button>
-                <a href="#" class="link">Forgot password?</a>
-              </div>
-            </div>
-            <div class="popup-foot">
-              <p>Login via social networks</p>
-              <div class="social-links">
-                <a href="#" class="link facebook"><span></span></a>
-                <a href="#" class="link twitter"><span></span></a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="close"></div>
-      </div>
     </div>
   </div>
 </template>
@@ -252,6 +220,10 @@ export default {
 @media screen and (max-width: 1200px) {
   .top_panel {
     background-color: transparent;
+  }
+
+  .top_panel .center .menu ul li a {
+    color: #fff !important;
   }
 }
 </style>
