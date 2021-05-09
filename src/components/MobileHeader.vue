@@ -30,6 +30,27 @@
                   <a href="/hakkimizda">Hakkımızda</a>
                 </li>
                 <li>
+                  <a href="/hakkimizda">Ağanlar Group</a>
+                </li>
+                <li>
+                  <a href="/erolagan">Erol Ağan</a>
+                </li>
+                <li>
+                  <a href="/basindabiz">Basında Biz</a>
+                </li>
+                <li>
+                  <a href="/kalite">Kalite</a>
+                </li>
+                <li>
+                  <a href="/haberler">Haberler</a>
+                </li>
+                <li>
+                  <a href="/blog">Blog</a>
+                </li>
+                <li>
+                  <a href="/iletisim">İletişim</a>
+                </li>
+                <li>
                   <a href="/teknelerimiz">
                     <img
                       src="https://yatvilla.com/hackyfte/2021/03/header-yacht.png"

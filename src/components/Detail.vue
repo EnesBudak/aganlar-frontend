@@ -32,19 +32,7 @@
             <div class="slider_wrap">
               <div class="slider lightgallery" id="tour-head-slider">
                 <a :href="getYacht.imageUrl" class="slide">
-                  <img src="../assets/img/yat2.jpg" alt="" />
-                </a>
-                <a :href="getYacht.imageUrl" class="slide">
-                  <img src="../assets/img/yat3.jpg" alt="" />
-                </a>
-                <a :href="getYacht.imageUrl" class="slide">
-                  <img src="../assets/img/yat4.jpg" alt="" />
-                </a>
-                <a :href="getYacht.imageUrl" class="slide">
-                  <img src="../assets/img/yat5.jpg" alt="" />
-                </a>
-                <a :href="getYacht.imageUrl" class="slide">
-                  <img src="../assets/img/yat.jpg" alt="" />
+                  <img :src="getYacht.imageUrl" alt="" />
                 </a>
               </div>
             </div>

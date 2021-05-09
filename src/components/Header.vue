@@ -183,9 +183,6 @@ export default {
   justify-content: space-between;
 }
 
-.header {
-}
-
 .header__top {
   width: 100%;
   background-color: #00184a;
@@ -210,9 +207,6 @@ export default {
 .header__top--social-icon svg {
   width: 100%;
   height: 100%;
-}
-
-.header__collapsible {
 }
 
 .header__collapsible--menu {
