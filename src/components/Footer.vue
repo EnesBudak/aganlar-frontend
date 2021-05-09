@@ -13,18 +13,18 @@
             <div class="col">
               <ul>
                 <li>
-                  <a href="travel-list-full-width.html">Ağanlar Group</a>
+                  <a href="/hakkimizda">Ağanlar Group</a>
                 </li>
                 <li>
-                  <a href="travel-list-right-sidebar.html">Erol Ağan</a>
+                  <a href="/erolagan">Erol Ağan</a>
                 </li>
                 <li>
-                  <a href="travel-list-left-sidebar.html">Blog</a>
+                  <a href="/blog">Blog</a>
                 </li>
                 <li>
-                  <a href="travel-list-image-header.html">Basında Biz</a>
+                  <a href="/basindabiz">Basında Biz</a>
                 </li>
-                <li><a href="search-results.html">Logolarımız</a></li>
+                <!-- <li><a href="search-results.html">Logolarımız</a></li> -->
               </ul>
             </div>
             <div class="col" style="margin-bottom: 10%">

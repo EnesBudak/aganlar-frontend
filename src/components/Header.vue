@@ -92,7 +92,7 @@
           <a href="/haberler" class="nav-item subMenu">Haberler</a>
           <a href="/blog" class="nav-item subMenu">Blog</a>
 
-          <a href="/KurumsalIletisim" class="nav-item subMenu">İletişim</a>
+          <a href="/contact" class="nav-item subMenu">İletişim</a>
         </ul>
       </div>
     </div>

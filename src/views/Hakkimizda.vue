@@ -42,7 +42,7 @@
             <a
               v-for="owner in ownerCategories"
               :key="owner"
-              :href="owner.url"
+              href="#"
               class="tour_item"
               :style="[
                 owner.imgUrl !== ''
@@ -130,13 +130,13 @@ export default {
         {
           name: "Mazlum Ağan",
           position: "President",
-          url: "/brokerage/sell/?type=sell",
+
           imageUrl: "",
         },
         {
           name: "Erdem Ağan",
           position: "Chief Executive Officer",
-          url: "/brokerage/rent/?type=rent",
+
           imageUrl: "",
         },
         {
@@ -149,7 +149,6 @@ export default {
           name: "Fatih Ağan",
           position: "",
           imageUrl: "",
-          url: "contact",
         },
       ],
       stuffImages: [

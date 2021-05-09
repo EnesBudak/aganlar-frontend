@@ -1,7 +1,7 @@
 <template>
   <div class="page contacts-page full-width">
     <div class="wrap">
-      <div class="wrap_float" style="margin-top: 50px">
+      <div class="wrap_float" style="margin-top: 5%">
         <div class="page_head"></div>
         <div class="page_body">
           <div class="contacts-left">

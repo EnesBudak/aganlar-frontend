@@ -1,5 +1,5 @@
 <template>
-  <div class="page blog-list-page full-width" style="margin-top: 5%">
+  <div class="page blog-list-page full-width" style="margin-top: 10%">
     <div class="wrap">
       <div class="wrap_float">
         <div class="page_body">
