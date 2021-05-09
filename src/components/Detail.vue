@@ -150,9 +150,6 @@
                 <div class="day_item">
                   <div class="day_item-head">
                     <div class="preview">
-                      <div class="image">
-                        <!-- <img src="img/demo-bg.jpg" alt="" /> -->
-                      </div>
                       <div class="p">Genel</div>
                     </div>
                     <div class="_title"></div>
@@ -163,7 +160,7 @@
                     style="
                       display: block;
                       justify-content: center;
-                      text-align: center;
+                      text-align: left;
                     "
                   >
                     <div class="text">Üretici: {{ getYacht.owner }}</div>
@@ -180,9 +177,6 @@
                 <div class="day_item" id="temelBoyut">
                   <div class="day_item-head">
                     <div class="preview">
-                      <div class="image">
-                        <!-- <img src="img/demo-bg.jpg" alt="" /> -->
-                      </div>
                       <div class="p">Temel Boyutlar</div>
                     </div>
                     <div class="_title"></div>
@@ -193,7 +187,7 @@
                     style="
                       display: block;
                       justify-content: center;
-                      text-align: center;
+                      text-align: left;
                     "
                   >
                     <div class="text">LOA: {{ getYacht.loa }}</div>
@@ -208,9 +202,6 @@
                 <div class="day_item" id="yasamMahali">
                   <div class="day_item-head">
                     <div class="preview">
-                      <div class="image">
-                        <!-- <img src="img/demo-bg.jpg" alt="" /> -->
-                      </div>
                       <div class="p">Yaşam Mahali</div>
                     </div>
                     <div class="_title"></div>
@@ -221,7 +212,7 @@
                     style="
                       display: block;
                       justify-content: center;
-                      text-align: center;
+                      text-align: left;
                     "
                   >
                     <div class="text">
@@ -239,9 +230,6 @@
                 <div class="day_item">
                   <div class="day_item-head" id="armaDonanimi">
                     <div class="preview">
-                      <div class="image">
-                        <!-- <img src="img/demo-bg.jpg" alt="" /> -->
-                      </div>
                       <div class="p">Arma Donanımı</div>
                     </div>
                     <div class="_title"></div>
@@ -252,7 +240,7 @@
                     style="
                       display: block;
                       justify-content: center;
-                      text-align: center;
+                      text-align: left;
                     "
                   >
                     <div class="text">Mast: {{ getYacht.mast }}</div>
@@ -265,9 +253,6 @@
                 <div class="day_item" id="teknikBilgiler">
                   <div class="day_item-head">
                     <div class="preview">
-                      <div class="image">
-                        <!-- <img src="img/demo-bg.jpg" alt="" /> -->
-                      </div>
                       <div class="p">Teknik Bilgiler</div>
                     </div>
                     <div class="_title"></div>
@@ -278,7 +263,7 @@
                     style="
                       display: block;
                       justify-content: center;
-                      text-align: center;
+                      text-align: left;
                     "
                   >
                     <div class="text">
@@ -318,9 +303,6 @@
                 <div class="day_item" id="guverteElemanlari">
                   <div class="day_item-head">
                     <div class="preview">
-                      <div class="image">
-                        <!-- <img src="img/demo-bg.jpg" alt="" /> -->
-                      </div>
                       <div class="p">Güverte Elemanları</div>
                     </div>
                     <div class="_title"></div>
@@ -331,7 +313,7 @@
                     style="
                       display: block;
                       justify-content: center;
-                      text-align: center;
+                      text-align: left;
                     "
                   >
                     <div class="text">LOA: {{ getYacht.loa }}</div>

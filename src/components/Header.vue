@@ -1,162 +1,122 @@
 <template>
-  <div>
-    <div class="top_header">
-      <div class="right">
-        <div class="socials social-links top_logo">
-          <a
-            href="https://www.facebook.com/Aganlar-Shipyard-Marina-495465727226594/"
-            class="link facebook"
-            ><span></span
-          ></a>
-          <a href="https://twitter.com/aganlar" class="link twitter"
-            ><span></span
-          ></a>
-          <a href="https://www.instagram.com/aganlar" class="link instagram"
-            ><span></span
-          ></a>
-          <a
-            href="https://www.youtube.com/channel/UCtq-tKx_on2xNE5zDL1BV1Q"
-            class="link youtube"
-            ><span></span
-          ></a>
-        </div>
+  <header class="header">
+    <div class="header__top flex items-center space-between p-container">
+      <nav class="header__top--socials">
+        <a
+          href="https://www.facebook.com/Aganlar-Shipyard-Marina-495465727226594/"
+          class="header__top--social-icon"
+          ><facebook-icon
+        /></a>
+        <a href="https://twitter.com/aganlar" class="header__top--social-icon"
+          ><twitter-icon
+        /></a>
+        <a
+          href="https://www.instagram.com/aganlar/"
+          class="header__top--social-icon"
+          ><instagram-icon
+        /></a>
+        <a
+          href="https://www.youtube.com/channel/UCtq-tKx_on2xNE5zDL1BV1Q"
+          class="header__top--social-icon"
+          ><youtube-icon
+        /></a>
+      </nav>
+      <div class="w-auto">
+        <select class="lang-select">
+          <option>TR</option>
+          <option>EN</option>
+        </select>
       </div>
     </div>
-    <div class="top_panel">
-      <div class="wrap">
-        <div class="wrap_float">
-          <div class="menu_wrap" id="menu_wrap">
-            <div class="scroll">
-              <div class="center">
-                <div class="menu">
-                  <ul>
-                    <li>
-                      <a @click="showInfo = !showInfo" style="width: 250px"
-                        >Hakkımızda</a
-                      >
-                    </li>
-                    <li>
-                      <a href="/teknelerimiz">
-                        <img
-                          src="https://yatvilla.com/hackyfte/2021/03/header-yacht.png"
-                          alt=""
-                      /></a>
-                    </li>
-                    <li>
-                      <a href="/marina">
-                        <img
-                          src="https://yatvilla.com/hackyfte/2021/03/header-marina.png"
-                          alt=""
-                        />
-                      </a>
-                    </li>
-                    <li>
-                      <a href="/">
-                        <img
-                          src="https://yatvilla.com/hackyfte/2021/03/header-aganlar.png"
-                          alt=""
-                        />
-                      </a>
-                    </li>
-                    <li>
-                      <a href="/brokerage">
-                        <img
-                          src="https://yatvilla.com/hackyfte/2021/03/header-brokerage.png"
-                          alt=""
-                      /></a>
-                    </li>
-                    <li>
-                      <a href="/insurance"
-                        ><img
-                          src="https://yatvilla.com/hackyfte/2021/03/header-insurance.png"
-                          alt=""
-                      /></a>
-                    </li>
-                  </ul>
-                  <div class="mobile_content">
-                    <div class="currency_mob">
-                      <select>
-                        <option value="tr">TR</option>
-                        <option value="en">EN</option>
-                      </select>
-                      <p>Dil Seçiniz</p>
-                    </div>
-                    <div class="tel">
-                      <a href="tel:+0034411345777">+ 90 543 529 21 17</a>
-                    </div>
-                    <div class="social">
-                      <a href="#" class="link facebook"><span></span></a>
-                      <a href="#" class="link instagram"><span></span></a>
-                      <a href="#" class="link pinterest"><span></span></a>
-                      <a href="#" class="link twitter"><span></span></a>
-                      <a href="#" class="link youtube"><span></span></a>
-                    </div>
-                  </div>
-                </div>
-                <transition name="fade">
-                  <div class="menu" v-show="showInfo">
-                    <ul>
-                      <li>
-                        <a href="/hakkimizda" class="hideBarButton">
-                          Aganlar Group
-                        </a>
-                      </li>
-                      <li>
-                        <a href="/erolagan" class="hideBarButton">
-                          Erol Ağan
-                        </a>
-                      </li>
-                      <li>
-                        <a href="/basindabiz" class="hideBarButton">
-                          Basında Biz
-                        </a>
-                      </li>
-                      <li>
-                        <a href="/kalite" class="hideBarButton"> Kalite </a>
-                      </li>
-                      <li>
-                        <a href="/blog" class="hideBarButton"> Blog</a>
-                      </li>
-                      <li>
-                        <a href="/haberler" class="hideBarButton"> Haberler</a>
-                      </li>
-                      <li>
-                        <a href="/contact" class="hideBarButton"> İletişim</a>
-                      </li>
-                    </ul>
-                  </div>
-                </transition>
-
-                <div class="close" id="menu-close">
-                  <span></span>
-                  <span></span>
-                  <span></span>
-                </div>
-              </div>
-
-              <div class="user" id="userblock">
-                <div class="currency">
-                  <select>
-                    <option value="tr">TR</option>
-                    <option value="en">EN</option>
-                  </select>
-                </div>
-              </div>
-            </div>
+    <div class="header__desktop">
+      <div class="p-container flex items-center bg-gray">
+        <div class="header__collapsible w-auto">
+          <div
+            class="header__collapsible--action cursor-pointer"
+            @click="showInfo = !showInfo"
+          >
+            Hakkımızda
           </div>
-          <div class="mobile_btn" id="mobile_btn">
-            <span></span>
-            <span></span>
-            <span></span>
+        </div>
+        <div class="flex justify-center">
+          <div class="w-auto">
+            <ul class="grid grid-cols-5 gap-30 items-center">
+              <li>
+                <a href="/teknelerimiz">
+                  <img
+                    src="https://yatvilla.com/hackyfte/2021/03/header-yacht.png"
+                    alt=""
+                /></a>
+              </li>
+              <li>
+                <a href="/marina">
+                  <img
+                    src="https://yatvilla.com/hackyfte/2021/03/header-marina.png"
+                    alt=""
+                  />
+                </a>
+              </li>
+              <li>
+                <a href="/">
+                  <img
+                    src="https://yatvilla.com/hackyfte/2021/03/header-aganlar.png"
+                    alt=""
+                  />
+                </a>
+              </li>
+              <li>
+                <a href="/brokerage">
+                  <img
+                    src="https://yatvilla.com/hackyfte/2021/03/header-brokerage.png"
+                    alt=""
+                /></a>
+              </li>
+              <li>
+                <a href="/insurance"
+                  ><img
+                    src="https://yatvilla.com/hackyfte/2021/03/header-insurance.png"
+                    alt=""
+                /></a>
+              </li>
+            </ul>
           </div>
         </div>
       </div>
+      <div class="header__collapsible--menu" :class="{ visible: showInfo }">
+        <ul class="flex items-center">
+          <a href="/hakkimizda" class="nav-item subMenu">Ağanlar Group</a>
+          <a href="/erolagan" class="nav-item subMenu">Erol Ağan</a>
+          <a href="/basindabiz" class="nav-item subMenu">Basında Biz</a>
+
+          <a href="/kalite" class="nav-item subMenu">Kalite</a>
+          <a href="/haberler" class="nav-item subMenu">Haberler</a>
+          <a href="/blog" class="nav-item subMenu">Blog</a>
+
+          <a href="/KurumsalIletisim" class="nav-item subMenu">İletişim</a>
+        </ul>
+      </div>
     </div>
-  </div>
+    <mobile-header />
+  </header>
 </template>
 
 <script>
+import FacebookIcon from "./icons/Facebook.vue";
+import TwitterIcon from "./icons/Twitter.vue";
+import InstagramIcon from "./icons/Instagram.vue";
+import YoutubeIcon from "./icons/Youtube.vue";
+
+import MobileHeader from "./MobileHeader.vue";
+
 export default {
+  name: "Header",
+  components: {
+    FacebookIcon,
+    TwitterIcon,
+    YoutubeIcon,
+    InstagramIcon,
+    MobileHeader,
+  },
   data() {
     return {
       showInfo: false,
@@ -166,64 +126,144 @@ export default {
 </script>
 
 <style>
-.fade-enter-active,
-.fade-leave-active {
-  transition: opacity 0.5s ease;
+.lang-select {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  font-size: 14px;
+  color: #fff;
+  padding: 4px 10px;
 }
-.hideBarButton {
-  height: 60px;
+.p-container {
+  padding: 10px 36px;
 }
 
-.hideBarButton:hover {
-  border-bottom: 3px solid #41a3ff !important;
+.cursor-pointer {
+  cursor: pointer;
 }
 
-.fade-enter-from,
-.fade-leave-to {
-  opacity: 0;
-  transform-style: opacity 1s ease;
+.bg-gray {
+  background-color: rgba(235, 235, 236, 0.85);
 }
-.top_panel {
-  background-color: #fff;
+.header {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999;
 }
-.top_panel .wrap_float {
-  position: relative;
+
+.w-auto {
+  width: auto !important;
+}
+.grid {
+  display: grid;
+}
+
+.grid-cols-5 {
+  grid-template-columns: repeat(5, auto);
+}
+
+.gap-30 {
+  grid-gap: 30px;
+}
+
+.flex {
+  display: flex;
+}
+.items-center {
+  align-items: center;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.space-between {
+  justify-content: space-between;
+}
+
+.header {
+}
+
+.header__top {
+  width: 100%;
+  background-color: #00184a;
+}
+
+.header__top--socials {
+  width: auto !important;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 10px;
+  align-items: center;
+}
+
+.header__top--social-icon {
+  width: 16px;
+  height: 16px;
   display: flex;
   align-items: center;
   justify-content: center;
 }
-.top_panel .menu_wrap {
-  width: auto;
-}
-.menu_wrap a:first-child {
-  color: #000 !important;
-}
-.top_header {
+
+.header__top--social-icon svg {
   width: 100%;
-  height: 50px;
-
-  background-color: #0045a0;
-}
-.top_panel span {
-  color: black;
+  height: 100%;
 }
 
-.top_logo a {
-  height: 0px !important;
-  margin: 20px !important;
+.header__collapsible {
 }
-@media screen and (max-width: 640px) {
-  .top_panel {
-    background-color: transparent;
+
+.header__collapsible--menu {
+  background-color: #ebebeb;
+
+  width: 100vw;
+  visibility: hidden;
+  opacity: 0;
+  transition: all 200ms;
+}
+
+.visible {
+  visibility: visible;
+  opacity: 1;
+}
+
+.nav-item {
+  padding: 18px 30px;
+  color: #00184a;
+}
+
+.nav-item:hover {
+  background-color: #00184a;
+  color: #fff !important;
+}
+
+.header__desktop {
+  display: block;
+}
+
+/* for tablet */
+@media only screen and (max-width: 768px) {
+  .p-container {
+    padding: 10px 12px !important;
   }
 }
-@media screen and (max-width: 1200px) {
-  .top_panel {
-    background-color: transparent;
+@media only screen and (max-width: 985px) {
+  .header__desktop {
+    display: none;
   }
 
-  .top_panel .center .menu ul li a {
-    color: #fff !important;
+  .header a,
+  .header select,
+  .header nav,
+  .header svg,
+  .header img {
+    margin-bottom: 0 !important;
+  }
+
+  .header__mobile {
+    display: block !important;
   }
 }
 </style>
