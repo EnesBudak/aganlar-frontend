@@ -11,8 +11,7 @@
           class="subscribe_block"
         >
           <div class="left">
-            <h2 class="_title"></h2>
-            <p class="text">OHSAS 18001 ISO 14001 | 2004 ISO 9001 | 2008</p>
+            <p class="text">OHSAS 18001 | ISO 14001:2004 | ISO 9001:2008</p>
             <br />
             <div>
               <img
@@ -63,5 +62,16 @@ export default {};
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+@media screen and (max-width: 1200px) {
+  .subscribe_section .subscribe_block .left {
+    display: flex !important;
+    flex-direction: column !important;
+  }
+}
+
+.subscribe_section .subscribe_block .left {
+  width: 100%;
 }
 </style>

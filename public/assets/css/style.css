@@ -4177,10 +4177,11 @@ body.os-windows .popup::-webkit-scrollbar-thumb {
     width: 34vw;
   }
   .instagram_posts .post {
-    width: 25%;
+    width: 25%  ;
+   
   }
   .instagram_posts .post:last-child {
-    display: none;
+  
   }
   .footer_top .left {
     width: 100%;
@@ -9325,9 +9326,7 @@ body.os-windows .popup::-webkit-scrollbar-thumb {
 }
 @media screen and (max-width: 640px) {
 
-  *{
-    margin-bottom: 40px;
-  }
+ 
 }
 
 /*Import "Blog page" styles*/
