@@ -1,5 +1,8 @@
 <template>
-  <Slider />
+  <Slider
+    height="50"
+    imageUrl="https://www.aganlar.com/Admin/Content/Photos/Slider/1752019113613-marina_index_banner.png"
+  />
   <div class="page travel-list right-sidebar">
     <div class="page_head">
       <div class="wrap_float">

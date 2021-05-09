@@ -1,5 +1,8 @@
 <template>
-  <Slider />
+  <Slider
+    height="50"
+    imageUrl="https://www.aganlar.com/Admin/Content/Photos/Slider/1752019113603-brokerage_banner_new.jpg"
+  />
   <div class="page default travel-list full-width" style="margin-top: 5%">
     <div class="page_body">
       <div class="wrap_float">

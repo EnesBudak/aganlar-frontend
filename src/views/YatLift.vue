@@ -17,20 +17,20 @@
       <div class="wrap">
         <div class="wrap_float">
           <div class="left_content">
-            <div class="posts">
-              <a
-                v-for="category in yatchsCategories"
-                :key="category"
-                class="item"
-              >
-                <div class="item_right">
+            <div class="posts center">
+              <div class="item_right">
+                <a
+                  v-for="category in yatchsCategories"
+                  :key="category"
+                  class="item"
+                >
                   <!-- <p class="country">North Africa</p> -->
 
                   <p class="item_text">
                     {{ category.content }}
                   </p>
-                </div>
-              </a>
+                </a>
+              </div>
             </div>
           </div>
         </div>
@@ -62,5 +62,11 @@ export default {
 <style scoped>
 .travel-list .posts .item_right {
   line-height: 2rem;
+}
+.center {
+  float: none;
+  display: flex;
+
+  justify-content: center;
 }
 </style>

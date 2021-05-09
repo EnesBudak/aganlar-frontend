@@ -31,9 +31,6 @@
               </div>
             </a>
           </div>
-          <div class="btn_wrap load_btn_wrap">
-            <a class="load_more button"><span>Daha Fazla</span></a>
-          </div>
         </div>
       </div>
     </div>

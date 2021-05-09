@@ -5,15 +5,17 @@
         <div class="title_wrap">
           <h2 class="title">Haberler</h2>
           <!-- <p class="subtitle">Watch and be inspired</p> -->
-          <div class="controls">
+          <!-- <div class="controls">
             <a href="#" class="link">Tüm Haberler</a>
-          </div>
+          </div> -->
         </div>
         <div class="section_content">
-          <a v-for="i in 3" :key="i" href="#" class="blog_item">
+          <a v-for="i in 1" :key="i" href="#" class="blog_item">
             <div
               class="blog_item_top"
-              style="background-image: url(img/demo-bg.jpg)"
+              style="
+                background-image: url(https://www.aganlar.com/Admin/Content/Photos/Haberler/1872020160915-g3.jpg);
+              "
             >
               <div class="sq_parent">
                 <div class="sq_wrap">
@@ -34,9 +36,7 @@
               <div class="author">
                 <div class="date">30 Nisan 2019</div>
               </div>
-              <p class="text">
-                {{ content.substring(0, 200) }}... Devamını Oku
-              </p>
+              <p class="text">{{ content }}</p>
             </div>
           </a>
         </div>

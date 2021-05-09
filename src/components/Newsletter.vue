@@ -14,26 +14,32 @@
             <p class="text">OHSAS 18001 | ISO 14001:2004 | ISO 9001:2008</p>
             <br />
             <div>
-              <img
-                alt=""
-                src="https://www.aganlar.com/Content/Themes/images/footer-dto.png"
-              />
-              <img
-                alt=""
-                src="https://www.aganlar.com/Content/Themes/images/footer-dto.png"
-              />
-              <img
-                alt=""
-                src="https://www.aganlar.com/Content/Themes/images/footer-dto.png"
-              />
-              <img
-                alt=""
-                src="https://www.aganlar.com/Content/Themes/images/footer-dto.png"
-              />
-              <img
-                alt=""
-                src="https://www.aganlar.com/Content/Themes/images/footer-dto.png"
-              />
+              <ul>
+                <li>
+                  <img
+                    alt=""
+                    src="https://www.aganlar.com/Content/Themes/images/footer-dto.png"
+                  />
+                </li>
+                <li>
+                  <img
+                    alt=""
+                    src="https://www.aganlar.com/Content/Themes/images/footer-gmo.png"
+                  />
+                </li>
+                <li>
+                  <img
+                    alt=""
+                    src="https://www.aganlar.com/Content/Themes/images/footer-bodto.png"
+                  />
+                </li>
+                <li>
+                  <img
+                    alt=""
+                    src="https://www.aganlar.com/Content/Themes/images/footer-dd.png"
+                  />
+                </li>
+              </ul>
             </div>
           </div>
         </div>
@@ -57,13 +63,23 @@ export default {};
   width: auto;
   clear: both;
 }
-.left {
+.left ul {
   text-align: center;
   display: flex;
   align-items: center;
   justify-content: center;
+  width: 100%;
 }
-
+.left li {
+  width: 100%;
+}
+.left p {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
 @media screen and (max-width: 1200px) {
   .subscribe_section .subscribe_block .left {
     display: flex !important;

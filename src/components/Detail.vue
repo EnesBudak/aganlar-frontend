@@ -18,11 +18,6 @@
                 {{ getYacht.name }}
               </div>
               <div class="controls">
-                <!-- <div class="add_bookmark fav-button">
-                  <i class="is-added bouncy"></i>
-                  <i class="not-added bouncy"></i>
-                  <span class="fav-overlay"></span>
-                </div> -->
                 <div class="arrows" id="tour-head-slider-arrows">
                   <div class="arrow prev"></div>
                   <div class="arrow next"></div>
@@ -36,89 +31,6 @@
                 </a>
               </div>
             </div>
-            <!-- <div class="bottom-info">
-              <div class="bottom-info-left">
-                <div class="search-tour">
-                  <div class="search-form">
-                    <div class="date-col">
-                      <div class="label">Check In</div>
-                      <div class="date_div">
-                        <input type="text" class="js_calendar desctop-input" />
-                        <input type="date" class="mobile-input" />
-                        <div class="day">21</div>
-                        <div class="date_div_right">
-                          <div class="month">December</div>
-                          <div class="year">2019</div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="date-col">
-                      <div class="label">Check Out</div>
-                      <div class="date_div">
-                        <input type="text" class="js_calendar desctop-input" />
-                        <input type="date" class="mobile-input" />
-                        <div class="day">21</div>
-                        <div class="date_div_right">
-                          <div class="month">December</div>
-                          <div class="year">2019</div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="num-col">
-                      <div class="label">Aduld</div>
-                      <div class="num_wrap">
-                        <div class="buttons">
-                          <button class="plus"></button>
-                          <button class="minus"></button>
-                        </div>
-                        <input
-                          type="number"
-                          class="val js_num"
-                          value="3"
-                          min="0"
-                          max="99"
-                        />
-                      </div>
-                    </div>
-                    <div class="num-col last">
-                      <div class="label">Children</div>
-                      <div class="num_wrap">
-                        <div class="buttons">
-                          <button class="plus"></button>
-                          <button class="minus"></button>
-                        </div>
-                        <input
-                          type="number"
-                          class="val js_num"
-                          value="3"
-                          min="0"
-                          max="99"
-                        />
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="bottom-info-right">
-                <div class="info">
-                  <div class="days">5 days |</div>
-                  <div class="cost">from $356</div>
-                </div>
-                <button class="btn button js-popup-open" data-href="#book-now">
-                  Book now
-                </button>
-                <div class="rating">
-                  <div class="rating-stars">
-                    <div class="star filled"></div>
-                    <div class="star filled"></div>
-                    <div class="star filled"></div>
-                    <div class="star"></div>
-                    <div class="star"></div>
-                  </div>
-                  <div class="rating-text">10 reviews</div>
-                </div>
-              </div>
-            </div> -->
           </div>
         </div>
       </div>

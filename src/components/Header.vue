@@ -90,7 +90,6 @@
 
           <a href="/kalite" class="nav-item subMenu">Kalite</a>
           <a href="/haberler" class="nav-item subMenu">Haberler</a>
-          <a href="/blog" class="nav-item subMenu">Blog</a>
 
           <a href="/contact" class="nav-item subMenu">İletişim</a>
         </ul>

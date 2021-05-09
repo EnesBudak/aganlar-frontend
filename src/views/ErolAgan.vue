@@ -52,10 +52,30 @@
       </div>
     </div>
   </div>
+
+  <div class="slider_wrap">
+    <div class="slider lightgallery" id="tour-head-slider">
+      <a v-for="image in images" :key="image" :href="image" class="slide">
+        <img :src="image" alt="" />
+      </a>
+    </div>
+  </div>
 </template>
 
 <script>
-export default {};
+export default {
+  data() {
+    return {
+      images: [
+        "https://www.aganlar.com/Admin/Content/Photos/Gallery/2642019114530-erol_agan_img_new_2.jpg",
+        "https://www.aganlar.com/Admin/Content/Photos/Gallery/2642019114540-erol_agan_img_new_3.jpg",
+        "https://www.aganlar.com/Admin/Content/Photos/Gallery/2642019114459-erol_agan_img_1.png",
+        "https://www.aganlar.com/Admin/Content/Photos/Gallery/2642019114516-erol_agan_img_new_1.jpg",
+        "https://www.aganlar.com/Admin/Content/Photos/Gallery/2642019114530-erol_agan_img_new_2.jpg",
+      ],
+    };
+  },
+};
 </script>
 
 <style scoped>

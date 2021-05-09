@@ -1,7 +1,7 @@
 <template>
   <Slider />
-  <div class="page travel-list right-sidebar">
-    <div class="page_head">
+  <div class="page travel-list right-sidebar" style="margin-top: 5%">
+    <div class="page_body">
       <div class="wrap_float">
         <div class="wrap">
           <div class="wrap_float">
@@ -16,21 +16,21 @@
     <div class="page_body">
       <div class="wrap">
         <div class="wrap_float">
-          <div class="left_content">
-            <div class="posts">
-              <a
-                v-for="category in yatchsCategories"
-                :key="category"
-                class="item"
-              >
-                <div class="item_right">
+          <div>
+            <div class="posts center">
+              <div class="item_right">
+                <a
+                  v-for="category in yatchsCategories"
+                  :key="category"
+                  class="item"
+                >
                   <!-- <p class="country">North Africa</p> -->
 
                   <p class="item_text">
                     {{ category.content }}
                   </p>
-                </div>
-              </a>
+                </a>
+              </div>
             </div>
           </div>
         </div>
@@ -65,5 +65,11 @@ export default {
 <style scoped>
 .travel-list .posts .item_right {
   line-height: 2rem;
+}
+.center {
+  float: none !important;
+  display: flex !important;
+
+  justify-content: center !important;
 }
 </style>

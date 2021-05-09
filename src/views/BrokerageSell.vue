@@ -6,7 +6,7 @@
       <div class="wrap_float">
         <div class="wrap">
           <div class="wrap_float">
-            <h1 class="title">Kiralık Yatlar</h1>
+            <h1 class="title">Satılık Yatlar</h1>
             <p class="subtitle"></p>
           </div>
         </div>

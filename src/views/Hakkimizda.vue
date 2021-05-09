@@ -74,7 +74,7 @@
             <a
               v-for="image in stuffImages"
               :key="image"
-              href="#"
+              :href="image"
               class="image-item"
             >
               <img :src="image" alt="" />

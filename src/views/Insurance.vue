@@ -1,9 +1,13 @@
 <template>
-  <Slider
-    title="Sigorta İçin Doğru Yerdesiniz!"
-    url="http://www.aganlarsigorta.com"
-    buttonTitle="Aganlar Insurance İçin Tıklayın!"
-  />
+  <div style="margin-top: 5%">
+    <Slider
+      height="100"
+      title="Sigorta İçin Doğru Yerdesiniz!"
+      url="http://www.aganlarsigorta.com"
+      imageUrl="https://www.aganlar.com/Admin/Content/Photos/Slider/1872019155327-6.yacht_insurance_510.jpg"
+      buttonTitle="Aganlar Insurance İçin Tıklayın!"
+    />
+  </div>
 </template>
 
 <script>
