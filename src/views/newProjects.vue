@@ -1,6 +1,5 @@
 <template>
-  <Slider />
-  <div class="page default travel-list full-width">
+  <div class="page default travel-list full-width" style="margin-top: 5%">
     <div class="page_head">
       <div class="wrap_float">
         <div class="wrap">

@@ -1,5 +1,8 @@
 <template>
-  <Slider />
+  <Slider
+    height="50"
+    imageUrl="https://aganlar.com/Content/Themes/images/repair-banner.png"
+  />
   <div class="page travel-list right-sidebar">
     <div class="page_head">
       <div class="wrap_float">
@@ -80,7 +83,7 @@ export default {
         {
           name: "Mekanik",
           content:
-            "Aganlar Yachts offers a comprehensive array of propulsion and mechanical repair services for your engine room needs. The jobs include installation, maintenance and repair of marine engines & generators, hydraulic stabilizer systems and pump lines, repair of marine propellers and shafts, maintenance of pulps & valves.",
+            "Ağanlar Yatçılık olarak; bakım, onarım ve mekanik başta olmak üzere, müşterilerimizin tüm makine dairesi ihtiyaçlarını tam kapsamlı bir şekilde karşılamaktayız. Yaptığımız işler arasında deniz motorları ve jeneratörlerin; kurulumu, bakım ve onarımı yer almaktadır. Buna ek olarak; hidrolik stabilizatör sistemleri ve pompa hatları uygulamaları, deniz pervaneleri ve şaft onarımı, genel pompa ve vanaların (valflerin?) de tüm bakımlarını gerçekleştirmekteyiz. Kendi bünyemizdeki, deneyimli mekanik ekibimizle; bir yatta ihtiyaç duyabileceğiniz tüm mekanik uygulamalarını üstleniyoruz.",
           url: "",
           imageUrl:
             "https://www.aganlar.com/Admin/Content/Photos/Marina/2492019123054-untitled_2.jpg",
@@ -88,7 +91,7 @@ export default {
         {
           name: "Boyama",
           content:
-            "Our mega sheds are one of the largest in the region, in 4 of them we can accommodate yachts up to 62 meters in length . Every year, so many yachts are being painted in these sheds by Aganlar, with high quality level of finish.",
+            "Mega hangarlarımız; Ege Bölgesi’ndeki en büyük hangarlardır. Bünyemizdeki 4 adet hangarda 62 metre uzunluğa kadar tüm yatları ağırlayabiliyoruz. Her yıl, bu hangarlarda çok sayıda yat; yüksek kalitede işçilik ve finiş işlemlerinden geçip boyanmaktadır. Ağanlar Yatçılık, bu 4 büyük kapalı hangara ek olarak; yat türü ve boyama işlemindeki ısı, rüzgâr gibi faktörlere bağlı olarak seyyar hangarlar kurabilmektedir. Bu sayede çeşitli boyut ve türdeki çok sayıda yat; eş zamanlı olarak yenilenmekte ve boyanmaktadır.",
           url: "yacht",
           imageUrl:
             "https://www.aganlar.com/Admin/Content/Photos/Marina/1752019120733-repair_boyama.jpg",
@@ -96,32 +99,32 @@ export default {
         {
           name: "Elektrik ve Elektronik",
           content:
-            "We can design, repair, perform diagnostic, do a Megger test, install and modify all electrical systems AC or DC. This includes battery chargers, instruments, engine gauges, alternators, starter motors, bilge pumps, alarms, propane solenoid shut off systems, panel breakers switches, transfer switches, inverters, batteries and more.",
+            "AC veya DC farketmeksizin; tüm elektrik sistemlerini tasarlayabilir, teşhis yapabilir veya onarabiliriz. Megger testi yapabilir ve tüm bu sistemlerin kurulum ve değişimini sağlayabiliriz. Elektrik ve Elektronik hizmetlerimize; akü şarj cihazları, gerekli aletler, motor göstergeleri, alternatörler, marş motorları, sintine pompaları, alarmlar, propan solenoid kapatma sistemleri, panel kesici anahtarları, transfer anahtarları, invertörler, piller ve daha fazlası da dahildir.",
           url: "",
           imageUrl:
             "https://www.aganlar.com/Admin/Content/Photos/Marina/1752019120758-repair_elektrik.jpg",
         },
         {
-          name: "Deck Replacing",
+          name: "Güverte Değiştirme (Değişim)",
           content:
-            "We have qualified craftsmen that can work in wood, steel, aluminium or composite material, all type of structural work can be performed by Aganlar Yachts. Repair of all structural damages include the maintenance of outer hull, plate changing, ribs & frames, rearrangement of tanks, manufacturing of new tanks, upgrading of superstructure, deck extension, etc.",
+            "Ağanlar Yatçılık olarak; ahşap, çelik, alüminyum veya kompozit malzemeler de dahil olmak üzere geniş bir yelpazede çalışabilen kalifiye ustalarımız ve ekibimizle, her türlü yapı işlemini gerçekleştirmekteyiz. Onarım sürecinde tüm yapısal ve donanımsal hasarların giderilmesini sağlıyoruz. Teknenin dış cephe bakımı, plaka değişimi, nervürler ve çerçeveler, tankların yeniden düzenlenmesi, yeni tankların üretilmesi, (güvertenin iyileştirilmesi, güverte uzatması gibi birçok hizmet ve servis; portföyümüzde yer almaktadır.",
           url: "",
           imageUrl:
             "https://www.aganlar.com/Admin/Content/Photos/Marina/1752019120825-repair_deck.jpg",
         },
         {
-          name: "Rigging",
+          name: "Arma",
           content:
-            "Aganlar Yachts services a wide range of sailboats, from day sailors to large cruising vessels. Being passionate sailors ourselves, we understand sailboat rigging and can handle all of your vessel's rigging needs. These range from mast and boom servicing to refit and repairs, rigging work and hardware, commissioning and tuning, and project management.",
+            "Ağanlar Yatçılık; günü birlik mavi yolculuk teknelerinden büyük seyir gemilerine kadar, geniş bir yelpazede yelkenli teknelere hizmet vermektedir. Tutkulu denizciler olarak; yelkenli teknelerdeki arma işlemlerinizi en iyi şekilde anlıyor ve teknenizin tüm donanım ihtiyaçlarını karşılıyoruz. Arma hizmetlerimiz; direk ve bom direği servisinden tutun, yeniden montaj ve onarımlar, donanım işleri, tüm donanımın kapsamına ve devreye alınmasına, ayarlanmasına ve proje yönetimine kadar gerekli olabilecek tüm adımları içeriyor.Ağanlar Yatçılık Arma hizmetleri sayesinde tek bir noktada tüm işlemlerinizi kolayca gerçekleştirebilirsiniz.",
           url: "",
           imageUrl:
             "https://www.aganlar.com/Admin/Content/Photos/Marina/1752019120846-repair_rigging.jpg",
         },
 
         {
-          name: "Joinery & Carpentry",
+          name: "İnce Ahşap İşlemecliği ve Marangozluk",
           content:
-            "Aganlar Yachts has a rich tradition of exceptional woodworking. As custom boat builders, our craftsmen are continually challenged to hone and expand their skills. These skill sets carry over into our repair and refit work. Whether building a custom entertainment center or replanking a traditional wooden boat, our woodworkers excel.",
+            "Ağanlar Yatçılık Marangozluk Hizmetlerinde; zengin ve en üst seviyede, ahşap işleme geleneği ile öne çıkmaktadır. Ustalarımız; becerilerini sürekli olarak geliştirmekte ve özel tekne yapımında kaliteyi her geçen gün biraz daha yükselterek, sektöre meydan okumaktadırlar. Doğal olarak bu beceriler; tamir ve yenileme çalışmalarımıza da yansıyor.İster özel bir yattaki ince ahşap işlemeciliği işleminiz olsun, isterse geleneksel bir ahşap teknenin baştan sona tasarlanması olsun; son derece estetik ve kaliteli bir işçilik sergilemektedirler. En minimalist ahşap işlemelerinden; en büyük tekne inşasına kadar ihtiyaç duyduğunuz tüm marangozluk hizmetlerini sunuyoruz.",
           url: "",
           imageUrl:
             "https://www.aganlar.com/Admin/Content/Photos/Marina/1752019120908-repair_carpentry.jpg",

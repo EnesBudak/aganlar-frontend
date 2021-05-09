@@ -1,5 +1,8 @@
 <template>
-  <Slider />
+  <Slider
+    height="75"
+    imageUrl="https://www.aganlar.com/Content/Themes/images/projeler-banner.png"
+  />
   <div class="page default travel-list full-width" style="margin-top: 5%">
     <div class="page_body">
       <div class="wrap">

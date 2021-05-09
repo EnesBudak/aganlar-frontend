@@ -1,5 +1,8 @@
 <template>
-  <Slider />
+  <Slider
+    height="90"
+    imageUrl="http://www.aganlar.com/Content/Themes/images/logolarimiz-banner.jpg"
+  />
   <div class="page travel-list right-sidebar">
     <div class="page_head">
       <div class="wrap_float">

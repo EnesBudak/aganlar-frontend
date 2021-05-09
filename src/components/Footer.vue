@@ -27,24 +27,26 @@
                 <!-- <li><a href="search-results.html">Logolarımız</a></li> -->
               </ul>
             </div>
-            <div class="col" style="margin-bottom: 10%">
-              <div class="_title"></div>
-              <div class="contacts_info" style="line-height: 2rem">
-                <div class="tel">
-                  Telefon
-                  <br />
-                  <a href="tel:+90252444480">+90 (252) 444 4 808</a>
-                </div>
-                <div class="tel">
-                  Fax
-                  <br />
-                  <a href="tel:+902523138766">+90 (252) 313 87 66</a>
-                </div>
-                <div class="email">
-                  Email
-                  <br />
-                  <a href="mailto:info@aganlar.com">info@aganlar.com</a>
-                </div>
+            <div class="col" style="margin-bottom: 10%; line-height: 1rem">
+              <div class="contacts_info">
+                <ul>
+                  <li>
+                    Telefon
+
+                    <a href="tel:+90252444480">+90 (252) 444 4 808</a>
+                  </li>
+                  <li>
+                    Fax
+
+                    <a href="tel:+902523138766">+90 (252) 313 87 66</a>
+                  </li>
+                  <li>
+                    Email
+
+                    <a href="mailto:info@aganlar.com">info@aganlar.com</a>
+                  </li>
+                </ul>
+
                 <!-- <div class="address">
                 1355 Digistrict St, Suite 909 San, Francisco, CA 10001 <br />
                 United States
@@ -58,10 +60,24 @@
             </div>
 
             <div class="socials social-links" style="margin-top: 10%">
-              <a href="#" class="link facebook"><span></span></a>
-              <a href="#" class="link instagram"><span></span></a>
-              <a href="#" class="link pinterest"><span></span></a>
-              <a href="#" class="link youtube"><span></span></a>
+              <a
+                href="https://www.facebook.com/Aganlar-Shipyard-Marina-495465727226594/"
+                class="link facebook"
+                ><span></span
+              ></a>
+              <a
+                href="https://www.instagram.com/aganlar/"
+                class="link instagram"
+                ><span></span
+              ></a>
+              <a href="https://twitter.com/aganlar" class="link twitter"
+                ><span></span
+              ></a>
+              <a
+                href="https://www.youtube.com/channel/UCtq-tKx_on2xNE5zDL1BV1Q"
+                class="link youtube"
+                ><span></span
+              ></a>
             </div>
           </div>
         </div>
