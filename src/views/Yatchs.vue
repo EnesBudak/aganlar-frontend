@@ -8,7 +8,7 @@
       <div class="wrap_float">
         <div class="wrap">
           <div class="wrap_float">
-            <h1 class="title" style="margin-top: 30px">AGANLAR YACHTS</h1>
+            <!-- <h1 class="title" style="margin-top: 30px">AGANLAR YACHTS</h1> -->
             <!-- <p class="subtitle">
               Latin literature from 45 BC, making it over 2000 years old
             </p> -->

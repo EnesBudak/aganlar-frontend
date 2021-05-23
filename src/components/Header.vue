@@ -41,41 +41,11 @@
         <div class="flex justify-center">
           <div class="w-auto">
             <ul class="grid grid-cols-5 gap-30 items-center">
-              <li>
-                <a href="/teknelerimiz">
-                  <img
-                    src="https://yatvilla.com/hackyfte/2021/03/header-yacht.png"
-                    alt=""
-                /></a>
-              </li>
-              <li>
-                <a href="/marina">
-                  <img
-                    src="https://yatvilla.com/hackyfte/2021/03/header-marina.png"
-                    alt=""
-                  />
-                </a>
-              </li>
-              <li>
-                <a href="/">
-                  <img
-                    src="https://yatvilla.com/hackyfte/2021/03/header-aganlar.png"
-                    alt=""
-                  />
-                </a>
-              </li>
-              <li>
-                <a href="/brokerage">
-                  <img
-                    src="https://yatvilla.com/hackyfte/2021/03/header-brokerage.png"
-                    alt=""
-                /></a>
-              </li>
-              <li>
-                <a href="/insurance"
-                  ><img
-                    src="https://yatvilla.com/hackyfte/2021/03/header-insurance.png"
-                    alt=""
+              <li v-for="route in routes" :key="route">
+                <a
+                  :href="'/' + route.url"
+                  :class="currentRouteName == route.url ? 'active-menu' : ''"
+                  ><img :src="route.imageUrl" alt=""
                 /></a>
               </li>
             </ul>
@@ -119,12 +89,44 @@ export default {
   data() {
     return {
       showInfo: false,
+      routes: [
+        {
+          url: "Teknelerimiz",
+          imageUrl: "https://yatvilla.com/hackyfte/2021/03/header-yacht.png",
+        },
+        {
+          url: "Marina",
+          imageUrl: "https://yatvilla.com/hackyfte/2021/03/header-marina.png",
+        },
+        {
+          url: "Home",
+          imageUrl: "https://yatvilla.com/hackyfte/2021/03/header-aganlar.png",
+        },
+        {
+          url: "Brokerage",
+          imageUrl:
+            "https://yatvilla.com/hackyfte/2021/03/header-brokerage.png",
+        },
+        {
+          url: "Insurance",
+          imageUrl:
+            "https://yatvilla.com/hackyfte/2021/03/header-insurance.png",
+        },
+      ],
     };
+  },
+  computed: {
+    currentRouteName() {
+      return this.$route.name;
+    },
   },
 };
 </script>
 
 <style>
+.active-menu {
+  border-bottom: 2px solid #00184a;
+}
 .lang-select {
   background-color: transparent;
   border: none;

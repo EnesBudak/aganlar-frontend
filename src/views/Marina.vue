@@ -8,7 +8,7 @@
       <div class="wrap_float">
         <div class="wrap">
           <div class="wrap_float">
-            <h1 class="title" style="margin-top: 30px">AGANLAR MARİNA</h1>
+            <!-- <h1 class="title" style="margin-top: 30px">AGANLAR MARİNA</h1> -->
             <!-- <p class="subtitle">
               Latin literature from 45 BC, making it over 2000 years old
             </p> -->
@@ -101,14 +101,14 @@ export default {
         {
           name: "Rezervasyon",
           content:
-            "Yat rezervasyon işlemleriniz için formu doldurun, size ulaşalım. Ağanlar Marina ile ilgili ihtiyacınız olan konuda rezervasyon yaptırın, konuyla ilgili deneyimli ekibimiz hemen sizinle iletişime geçsin.",
+            "Yat rezervasyon işlemleriniz için formu doldurun, size ulaşalım. Ağanlar Marina ile ilgili ihtiyacınız olan konuda rezervasyon yaptırın, konuyla ilgili deneyimli ekibimiz hemen sizinle iletişime geçsin.\n İletişim:marina@aganlar.com",
           url: "yacht",
           imageUrl:
             "https://yatvilla.com/hackyfte/2021/03/marina-index-img-4.png",
         },
         {
           name: "İLETİŞİM",
-          content: "N 37° 00´ 49.10E 27° 27´ 04.44VHF: 72 info@aganlar.com",
+          content: "N 37° 00´ 49.10E 27° 27´ 04.44VHF: 72 marina@aganlar.com",
           imageUrl: "https://yatvilla.com/hackyfte/2021/03/lokasyon-img.png",
           url: "contact",
         },

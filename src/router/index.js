@@ -25,7 +25,7 @@ import BrokerageSell from "../views/BrokerageSell.vue";
 import Detail from '../views/Detail.vue'
 const routes = [
   {
-    path: "/",
+    path: "/home",
     name: "Home",
     component: Home,
   },
@@ -144,7 +144,15 @@ const routes = [
     name: "Haberler",
     component: Haberler,
   },
-  
+  {
+    // path: "*",
+    path: "/:catchAll(.*)",
+    name: "Home",
+    component: Home,
+    meta: {
+      requiresAuth: false
+    }
+  }
   
   // {
   //   path: "/detail/:id",

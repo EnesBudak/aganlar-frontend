@@ -18,10 +18,11 @@
               ]"
             >
               <div class="tour_item_bottom">
-                <h3 class="_title">{{ category.name }}</h3>
+                <!-- <h3 class="_title">{{ category.name }}</h3> -->
+                <img :src="category.textUrl" alt="" />
                 <div class="_info">
                   <div class="_info_left">
-                    <div class="cost">Detaylar için tıklayın!</div>
+                    <!-- <div class="cost">Detaylar için tıklayın!</div> -->
                   </div>
                 </div>
               </div>
@@ -97,22 +98,30 @@ export default {
         {
           name: "Yachts",
           url: "teknelerimiz",
+          textUrl:
+            "https://www.aganlar.com/Content/Themes/images/home-yahct-logo-new-2.png",
           imageUrl: "https://yatvilla.com/hackyfte/2021/03/home-yaht-new.png",
         },
         {
           name: "Marina",
           url: "marina",
+          textUrl:
+            "https://www.aganlar.com//Content/Themes/images/home-marina-logo-new.png",
           imageUrl: "https://yatvilla.com/hackyfte/2021/03/home-marina-new.png",
         },
         {
           name: "Brokerage",
           url: "brokerage",
+          textUrl:
+            "https://www.aganlar.com/Content/Themes/images/home-brokerage-logo-new-2.png",
           imageUrl:
             "https://yatvilla.com/hackyfte/2021/03/home-brokerage-new.png",
         },
         {
           name: "Insurance",
           url: "insurance",
+          textUrl:
+            "https://www.aganlar.com/Content/Themes/images/home-insurance-logo-new-2.png",
           imageUrl:
             "https://yatvilla.com/hackyfte/2021/03/home-insurance-new.png",
         },
