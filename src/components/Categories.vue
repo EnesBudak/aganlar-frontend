@@ -98,32 +98,26 @@ export default {
         {
           name: "Yachts",
           url: "teknelerimiz",
-          textUrl:
-            "https://www.aganlar.com/Content/Themes/images/home-yahct-logo-new-2.png",
-          imageUrl: "https://yatvilla.com/hackyfte/2021/03/home-yaht-new.png",
+          textUrl: "/assets/img/home-yahct-logo-new-2.png",
+          imageUrl: "/assets/img/home-yaht-new.png",
         },
         {
           name: "Marina",
           url: "marina",
-          textUrl:
-            "https://www.aganlar.com//Content/Themes/images/home-marina-logo-new.png",
-          imageUrl: "https://yatvilla.com/hackyfte/2021/03/home-marina-new.png",
+          textUrl: "/assets/img/home-marina-logo-new.png",
+          imageUrl: "/assets/img/home-marina-new.png",
         },
         {
           name: "Brokerage",
           url: "brokerage",
-          textUrl:
-            "https://www.aganlar.com/Content/Themes/images/home-brokerage-logo-new-2.png",
-          imageUrl:
-            "https://yatvilla.com/hackyfte/2021/03/home-brokerage-new.png",
+          textUrl: "/assets/img/home-brokerage-logo-new-2.png",
+          imageUrl: "/assets/img/home-brokerage-new.png",
         },
         {
           name: "Insurance",
           url: "insurance",
-          textUrl:
-            "https://www.aganlar.com/Content/Themes/images/home-insurance-logo-new-2.png",
-          imageUrl:
-            "https://yatvilla.com/hackyfte/2021/03/home-insurance-new.png",
+          textUrl: "/assets/img/home-insurance-logo-new-2.png",
+          imageUrl: "/assets/img/home-insurance-new.png",
         },
       ],
     };

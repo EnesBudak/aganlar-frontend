@@ -5,10 +5,7 @@
         <div class="footer_top">
           <div class="left">
             <div class="col">
-              <img
-                src="https://yatvilla.com/hackyfte/2021/03/footer-logos-1.png"
-                alt=""
-              />
+              <img src="/assets/img/footer-logos-1.png" alt="" />
             </div>
             <div class="col">
               <ul>

@@ -44,11 +44,7 @@
       </div>
 
       <div class="profile-photo">
-        <img
-          src="https://www.aganlar.com/Content/Themes/images/erol_agan.png"
-          alt=""
-          width="100%"
-        />
+        <img src="/assets/img/erol_agan.png" alt="" width="100%" />
       </div>
     </div>
   </div>
@@ -67,11 +63,11 @@ export default {
   data() {
     return {
       images: [
-        "https://www.aganlar.com/Admin/Content/Photos/Gallery/2642019114530-erol_agan_img_new_2.jpg",
-        "https://www.aganlar.com/Admin/Content/Photos/Gallery/2642019114540-erol_agan_img_new_3.jpg",
-        "https://www.aganlar.com/Admin/Content/Photos/Gallery/2642019114459-erol_agan_img_1.png",
-        "https://www.aganlar.com/Admin/Content/Photos/Gallery/2642019114516-erol_agan_img_new_1.jpg",
-        "https://www.aganlar.com/Admin/Content/Photos/Gallery/2642019114530-erol_agan_img_new_2.jpg",
+        "/assets/img/2642019114530-erol_agan_img_new_2.jpg",
+        "/assets/img/2642019114540-erol_agan_img_new_3.jpg",
+        "/assets/img/2642019114459-erol_agan_img_1.png",
+        "/assets/img/2642019114516-erol_agan_img_new_1.jpg",
+        "/assets/img//2642019114530-erol_agan_img_new_2.jpg",
       ],
     };
   },

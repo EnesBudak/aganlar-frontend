@@ -1,8 +1,5 @@
 <template>
-  <Slider
-    imageUrl="https://www.aganlar.com/Admin/Content/Photos/Slider/2392019162305-blog_banner.jpg"
-    height="50"
-  />
+  <Slider imageUrl="/assets/img/2392019162305-blog_banner.jpg" height="50" />
   <BlogPost />
 </template>
 

@@ -5,6 +5,7 @@
         <div class="page_body">
           <div class="blog-list">
             <a
+              target="_blank"
               v-for="news in newsList"
               :key="news"
               :href="news.newsUrl"
@@ -48,34 +49,39 @@ export default {
         {
           name: "YACHTS TURKIYE",
           date: "Kasım 2018",
-          newsUrl:
-            "https://www.aganlar.com/Admin/Content/Photos/Gallery/3042019174201-jpg2pdf.pdf",
+          newsUrl: "/assets/img/3042019174201-jpg2pdf.pdf",
           newsImage:
-            "https://www.aganlar.com/Admin/Content/Photos/Gallery/3042019174201-yacht-turkiye-_-elpenor-_-1_kapak.jpg",
+            "/assets/img/3042019174201-yacht-turkiye-_-elpenor-_-1_kapak.jpg",
         },
         {
           name: "YACHTING WORLD",
           date: "Hazıran 2012",
-          newsUrl:
-            "https://www.aganlar.com/Admin/Content/Photos/Gallery/3042019174201-jpg2pdf.pdf",
-          newsImage:
-            "https://www.aganlar.com/Admin/Content/Photos/Gallery/3042019174119-1_kapak-2.jpg",
+          newsUrl: "/assets/img/3042019174201-jpg2pdf.pdf",
+          newsImage: "/assets/img/3042019174119-1_kapak-2.jpg",
         },
         {
           name: "BOAT INTERNATIONAL",
           date: "Ağustos 2012",
-          newsUrl:
-            "https://www.aganlar.com/Admin/Content/Photos/Gallery/3042019173901-bi_kestrel_106_august_2012.pdf",
-          newsImage:
-            "https://www.aganlar.com/Admin/Content/Photos/Gallery/3042019173901-240-x-328.jpg",
+          newsUrl: "/assets/img/3042019173901-bi_kestrel_106_august_2012.pdf",
+          newsImage: "/assets/img/3042019173901-240-x-328.jpg",
         },
         {
           name: "BOAT BUILDER TURKEY",
           date: "Mart-Nisan 2012",
-          newsUrl:
-            "https://www.aganlar.com/Admin/Content/Photos/Gallery/3042019173803-jpg2pdf.pdf",
-          newsImage:
-            "https://www.aganlar.com/Admin/Content/Photos/Gallery/3042019173803-240x328.jpg",
+          newsUrl: "/assets/img/3042019173803-jpg2pdf.pdf",
+          newsImage: "/assets/img/3042019173803-240x328.jpg",
+        },
+        {
+          name: "YAT HABER",
+          date: "Ocak-Şubat 2012",
+          newsUrl: "/assets/img/3042019174236-jpg2pdf.pdf",
+          newsImage: "/assets/img/3042019174236-haber1_kapak-001-2.jpg",
+        },
+        {
+          name: "MİLLİYET",
+          date: "Ocak 2018",
+          newsUrl: "/assets/img/3042019174008-jpg2pdf.pdf",
+          newsImage: "/assets/img/3042019174008-240x328.jpg",
         },
       ],
     };

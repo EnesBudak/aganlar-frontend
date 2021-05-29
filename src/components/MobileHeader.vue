@@ -50,39 +50,27 @@
                 </li>
                 <li>
                   <a href="/teknelerimiz">
-                    <img
-                      src="https://yatvilla.com/hackyfte/2021/03/header-yacht.png"
-                      alt=""
+                    <img src="/assets/img/header-yacht.png" alt=""
                   /></a>
                 </li>
                 <li>
                   <a href="/marina">
-                    <img
-                      src="https://yatvilla.com/hackyfte/2021/03/header-marina.png"
-                      alt=""
-                    />
+                    <img src="/assets/img/header-marina.png" alt="" />
                   </a>
                 </li>
                 <li>
                   <a href="/">
-                    <img
-                      src="https://yatvilla.com/hackyfte/2021/03/header-aganlar.png"
-                      alt=""
-                    />
+                    <img src="/assets/img/header-aganlar.png" alt="" />
                   </a>
                 </li>
                 <li>
                   <a href="/brokerage">
-                    <img
-                      src="https://yatvilla.com/hackyfte/2021/03/header-brokerage.png"
-                      alt=""
+                    <img src="/assets/img/header-brokerage.png" alt=""
                   /></a>
                 </li>
                 <li>
                   <a href="/insurance"
-                    ><img
-                      src="https://yatvilla.com/hackyfte/2021/03/header-insurance.png"
-                      alt=""
+                    ><img src="/assets/img/header-insurance.png" alt=""
                   /></a>
                 </li>
               </ul>
@@ -92,10 +80,7 @@
       </div>
       <div class="flex justify-center">
         <a href="/">
-          <img
-            src="https://yatvilla.com/hackyfte/2021/03/header-aganlar.png"
-            alt=""
-          />
+          <img src="/assets/img/header-aganlar.png" alt="" />
         </a>
       </div>
     </div>

@@ -92,25 +92,23 @@ export default {
       routes: [
         {
           url: "Teknelerimiz",
-          imageUrl: "https://yatvilla.com/hackyfte/2021/03/header-yacht.png",
+          imageUrl: "/assets/img/header-yacht.png",
         },
         {
           url: "Marina",
-          imageUrl: "https://yatvilla.com/hackyfte/2021/03/header-marina.png",
+          imageUrl: "/assets/img/header-marina.png",
         },
         {
           url: "Home",
-          imageUrl: "https://yatvilla.com/hackyfte/2021/03/header-aganlar.png",
+          imageUrl: "/assets/img/header-aganlar.png",
         },
         {
           url: "Brokerage",
-          imageUrl:
-            "https://yatvilla.com/hackyfte/2021/03/header-brokerage.png",
+          imageUrl: "/assets/img/header-brokerage.png",
         },
         {
           url: "Insurance",
-          imageUrl:
-            "https://yatvilla.com/hackyfte/2021/03/header-insurance.png",
+          imageUrl: "/assets/img/header-insurance.png",
         },
       ],
     };

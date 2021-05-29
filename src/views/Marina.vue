@@ -1,7 +1,7 @@
 <template>
   <Slider
     height="50"
-    imageUrl="https://www.aganlar.com/Admin/Content/Photos/Slider/1752019113613-marina_index_banner.png"
+    imageUrl="/assets/img/1752019113613-marina_index_banner.png"
   />
   <div class="page travel-list right-sidebar">
     <div class="page_head">
@@ -87,29 +87,26 @@ export default {
           content:
             "450 ton kapasitesiyle Türkiye’nin en yüksek taşıma hacmine sahip travellift’i ile hizmet veren marinamızda tekne ihtiyaçlarınızı karşılıyor, farklı boyutlardaki tekne siparişlerinizde “anahtar teslim” hizmetimizle hayallerinizi gerçeğe dönüştürüyoruz.",
           url: "servisler",
-          imageUrl:
-            "https://yatvilla.com/hackyfte/2021/03/marina-index-img-1.png",
+          imageUrl: "/assets/img/marina-index-img-1.png",
         },
         {
           name: "Yat Lift",
           content:
             "Ege Bölgesi'nin en büyük travellift'lerinden birini içeren yat lift bölümüzde en uygun çekek hizmetlerimizi bulabilirsiniz.",
           url: "yatlift",
-          imageUrl:
-            "https://www.aganlar.com/Content/Themes/images/marina-index-img-2.png",
+          imageUrl: "/assets/img/marina-index-img-2.png",
         },
         {
           name: "Rezervasyon",
           content:
             "Yat rezervasyon işlemleriniz için formu doldurun, size ulaşalım. Ağanlar Marina ile ilgili ihtiyacınız olan konuda rezervasyon yaptırın, konuyla ilgili deneyimli ekibimiz hemen sizinle iletişime geçsin.\n İletişim:marina@aganlar.com",
           url: "yacht",
-          imageUrl:
-            "https://yatvilla.com/hackyfte/2021/03/marina-index-img-4.png",
+          imageUrl: "/assets/img/marina-index-img-4.png",
         },
         {
           name: "İLETİŞİM",
           content: "N 37° 00´ 49.10E 27° 27´ 04.44VHF: 72 marina@aganlar.com",
-          imageUrl: "https://yatvilla.com/hackyfte/2021/03/lokasyon-img.png",
+          imageUrl: "/assets/img/lokasyon-img.png",
           url: "contact",
         },
       ],

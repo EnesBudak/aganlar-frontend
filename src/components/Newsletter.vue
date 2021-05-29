@@ -16,28 +16,16 @@
             <div>
               <ul>
                 <li>
-                  <img
-                    alt=""
-                    src="https://www.aganlar.com/Content/Themes/images/footer-dto.png"
-                  />
+                  <img alt="" src="/assets/img/footer-dto.png" />
                 </li>
                 <li>
-                  <img
-                    alt=""
-                    src="https://www.aganlar.com/Content/Themes/images/footer-gmo.png"
-                  />
+                  <img alt="" src="/assets/img/footer-gmo.png" />
                 </li>
                 <li>
-                  <img
-                    alt=""
-                    src="https://www.aganlar.com/Content/Themes/images/footer-bodto.png"
-                  />
+                  <img alt="" src="/assets/img/footer-bodto.png" />
                 </li>
                 <li>
-                  <img
-                    alt=""
-                    src="https://www.aganlar.com/Content/Themes/images/footer-dd.png"
-                  />
+                  <img alt="" src="/assets/img/footer-dd.png" />
                 </li>
               </ul>
             </div>

@@ -4,7 +4,7 @@
       height="100"
       title="Sigorta alanında müşteri memnuniyetinin önemini biliyor, her başvuruyu şeffaf ve objektif bir anlayışla değerlendiriyoruz."
       url="http://www.aganlarsigorta.com"
-      imageUrl="https://www.aganlar.com/Admin/Content/Photos/Slider/1872019155327-6.yacht_insurance_510.jpg"
+      imageUrl="/assets/img/1872019155327-6.yacht_insurance_510.jpg"
       buttonTitle="Detaylı bilgi almak için internet sitemizi ziyaret edebilirsiniz!"
     />
   </div>
@@ -24,8 +24,7 @@ export default {
           content:
             "Sigorta alanında müşteri memnuniyetinin önemini biliyor, her başvuruyu şeffaf ve objektif bir anlayışla değerlendiriyoruz.Detaylı bilgi almak için internet sitemizi ziyaret edebilirsiniz.",
           url: "http://www.aganlarsigorta.com",
-          imageUrl:
-            "https://yatvilla.com/hackyfte/2021/03/1872019161804-insurance1.jpg",
+          imageUrl: "/assets/img/1872019161804-insurance1.jpg",
         },
       ],
     };

@@ -1,8 +1,5 @@
 <template>
-  <Slider
-    height="75"
-    imageUrl="https://www.aganlar.com/Content/Themes/images/projeler-banner.png"
-  />
+  <Slider height="75" imageUrl="/assets/img/projeler-banner.png" />
   <div class="page default travel-list full-width" style="margin-top: 5%">
     <div class="page_body">
       <div class="wrap">
@@ -99,14 +96,12 @@ export default {
         {
           name: "Devam Edenler",
           url: "continuingprojects/?type=contiuningprojects",
-          imageUrl:
-            "https://aganlar.com/Content/Themes/images/thumbnail-proje-devam.png",
+          imageUrl: "/assets/img/thumbnail-proje-devam.png",
         },
         {
           name: "Yeni Projeler",
           url: "newprojects/?type=newprojects",
-          imageUrl:
-            "https://aganlar.com/Content/Themes/images/thumbnail-proje-yeni.png",
+          imageUrl: "/assets/img/thumbnail-proje-yeni.png",
         },
       ],
     };

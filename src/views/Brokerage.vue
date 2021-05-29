@@ -1,7 +1,7 @@
 <template>
   <Slider
     height="50"
-    imageUrl="https://www.aganlar.com/Admin/Content/Photos/Slider/1752019113603-brokerage_banner_new.jpg"
+    imageUrl="/assets/img/1752019113603-brokerage_banner_new.jpg"
   />
   <div class="page default travel-list full-width" style="margin-top: 5%">
     <div class="page_body">
@@ -51,29 +51,26 @@ export default {
           content:
             "Uzunluk, fiyat, tip, kapasite… Tercihlerinize en uygun yata burada karar verin.",
           url: "/brokerage/sell/?type=sell",
-          imageUrl:
-            "http://aganlar.com/Content/Themes/images/brokerage-index-img-1-new.jpg",
+          imageUrl: "/assets/img/brokerage-index-img-1-new.jpg",
         },
         {
           name: "Kiralık Yatlar",
           content:
             "İster denemek, ister öğrenmek, isterseniz de uzun soluklu yolculuklarınız için kiralama seçenekleri.",
           url: "/brokerage/rent/?type=rent",
-          imageUrl:
-            "http://aganlar.com/Content/Themes/images/brokerage-index-img-2.png",
+          imageUrl: "/assets/img/brokerage-index-img-2.png",
         },
         {
           name: "Rotalar",
           content:
             "Bodrum’un maviliğine doğru atacağınız her adımda ruhunuz yenilenecek.",
           url: "",
-          imageUrl:
-            "http://aganlar.com/Content/Themes/images/brokerage-index-rotalar-img.png",
+          imageUrl: "/assets/img/brokerage-index-rotalar-img.png",
         },
         {
           name: "İLETİŞİM",
           content: "N 37° 00´ 49.10E 27° 27´ 04.44VHF: 72 info@aganlar.com",
-          imageUrl: "https://yatvilla.com/hackyfte/2021/03/lokasyon-img.png",
+          imageUrl: "/assets/img/lokasyon-img.png",
           url: "contact",
         },
       ],

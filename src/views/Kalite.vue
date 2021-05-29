@@ -21,6 +21,7 @@
         <div class="page_body">
           <div class="blog-list">
             <a
+              target="_blank"
               v-for="news in newsList"
               :key="news"
               :href="news.newsUrl"
@@ -45,26 +46,20 @@ export default {
         {
           name: "YACHTS TURKIYE",
           date: "Kasım 2018",
-          newsUrl:
-            "https://www.aganlar.com/Content/Themes/images/kalite-18001.jpg",
-          newsImage:
-            "https://www.aganlar.com/Content/Themes/images/kalite-18001.jpg",
+          newsUrl: "/assets/img/kalite-18001.jpg",
+          newsImage: "/assets/img/kalite-18001.jpg",
         },
         {
           name: "YACHTING WORLD",
           date: "Hazıran 2012",
-          newsUrl:
-            "https://www.aganlar.com/Content/Themes/images/kalite-9001.jpg",
-          newsImage:
-            "https://www.aganlar.com/Content/Themes/images/kalite-9001.jpg",
+          newsUrl: "/assets/img/kalite-9001.jpg",
+          newsImage: "/assets/img/kalite-9001.jpg",
         },
         {
           name: "BOAT INTERNATIONAL",
           date: "Ağustos 2012",
-          newsUrl:
-            "https://www.aganlar.com//Content/Themes/images/kalite-14001.jpg",
-          newsImage:
-            "https://www.aganlar.com//Content/Themes/images/kalite-14001.jpg",
+          newsUrl: "/assets/img/kalite-14001.jpg",
+          newsImage: "/assets/img/kalite-14001.jpg",
         },
       ],
     };

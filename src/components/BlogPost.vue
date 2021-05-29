@@ -13,9 +13,7 @@
           <a v-for="i in 1" :key="i" href="#" class="blog_item">
             <div
               class="blog_item_top"
-              style="
-                background-image: url(https://www.aganlar.com/Admin/Content/Photos/Haberler/1872020160915-g3.jpg);
-              "
+              style="background-image: url(/assets/img/1872020160915-g3.jpg)"
             >
               <div class="sq_parent">
                 <div class="sq_wrap">
