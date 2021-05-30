@@ -40,7 +40,8 @@
                 </a>
               </div> -->
               <el-carousel
-                indicator-position="none"
+                v-if="getYacht.imageUrl"
+                :indicator-position="'none'"
                 :interval="4000"
                 type="card"
               >
@@ -420,8 +421,8 @@ export default {
     const yachtId = this.$route.params.id;
     console.log(yachtId, "iddddd");
     this.$store.dispatch("getYacht", yachtId).then((res) => {
-      console.log(this.imageList);
       this.imageList = res.imageUrl;
+      console.log(this.imageList);
     });
   },
 };
