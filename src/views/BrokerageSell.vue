@@ -81,11 +81,20 @@ export default {
     Slider,
     Search,
   },
+  data() {
+    return {
+      loading: true,
+    };
+  },
   created() {
     console.log(this.$route.query, "query param");
     const yachtType = this.$route.query.yachtType || "type=sell";
 
-    this.$store.dispatch("getYachts", yachtType);
+    this.$store.dispatch("getYachts", yachtType).then((res) => {
+      if (res.length > 0) {
+        this.loading = false;
+      }
+    });
   },
 };
 </script>

@@ -15,7 +15,7 @@
     <div class="page_body">
       <div class="wrap">
         <div class="wrap_float">
-          <div class="posts">
+          <div class="posts" v-loading="loading">
             <a
               :href="'/yacht/' + yacht._id"
               v-for="yacht in getYachts"
@@ -78,12 +78,20 @@ export default {
   components: {
     Slider,
   },
-
+  data() {
+    return {
+      loading: true,
+    };
+  },
   created() {
     console.log(this.$route.query, "query param");
     const yachtType = this.$route.query.yachtType;
 
-    this.$store.dispatch("getYachts", yachtType);
+    this.$store.dispatch("getYachts", yachtType).then((res) => {
+      if (res.length > 0) {
+        this.loading = false;
+      }
+    });
   },
 };
 </script>

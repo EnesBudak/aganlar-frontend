@@ -17,19 +17,42 @@
               <div class="tour_title">
                 {{ getYacht.name }}
               </div>
-              <div class="controls">
+              <!-- <div class="controls">
                 <div class="arrows" id="tour-head-slider-arrows">
                   <div class="arrow prev"></div>
                   <div class="arrow next"></div>
                 </div>
-              </div>
+              </div> -->
             </div>
             <div class="slider_wrap">
-              <div class="slider lightgallery" id="tour-head-slider">
-                <a :href="getYacht.imageUrl" class="slide">
-                  <img :src="getYacht.imageUrl" alt="" />
+              <!-- <div
+                class="slider lightgallery"
+                id="tour-head-slider"
+                v-if="imageList.length > 0"
+              >
+                <a
+                  v-for="(image, index) in imageList"
+                  :key="index"
+                  :href="image"
+                  class="slide"
+                >
+                  <img :src="image" alt="" />
                 </a>
-              </div>
+              </div> -->
+              <el-carousel
+                indicator-position="none"
+                :interval="4000"
+                type="card"
+              >
+                <el-carousel-item
+                  v-for="item in getYacht.imageUrl.length"
+                  :key="item"
+                >
+                  <a v-for="(image, index) in imageList" :key="index">
+                    <img :src="image" alt="" />
+                  </a>
+                </el-carousel-item>
+              </el-carousel>
             </div>
           </div>
         </div>
@@ -381,14 +404,31 @@
 
 <script>
 import { mapGetters } from "vuex";
+
 export default {
   computed: {
     ...mapGetters(["getYacht"]),
   },
+  components: {},
+  data() {
+    return {
+      imageList: [],
+    };
+  },
+  methods: {},
   created() {
     const yachtId = this.$route.params.id;
     console.log(yachtId, "iddddd");
-    this.$store.dispatch("getYacht", yachtId);
+    this.$store.dispatch("getYacht", yachtId).then((res) => {
+      console.log(this.imageList);
+      this.imageList = res.imageUrl;
+    });
   },
 };
 </script>
+<style scoped>
+img {
+  width: 100%;
+  height: 100%;
+}
+</style>
