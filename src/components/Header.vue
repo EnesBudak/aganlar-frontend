@@ -132,7 +132,7 @@ export default {
     },
   },
   created() {
-    this.$i18n.locale = localStorage.getItem("lang");
+    this.$i18n.locale = localStorage.getItem("lang") || "tr-TR";
   },
 };
 </script>
