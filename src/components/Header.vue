@@ -22,9 +22,14 @@
         /></a>
       </nav>
       <div class="w-auto">
-        <select class="lang-select">
-          <option>TR</option>
-          <option>EN</option>
+        <select v-model="locale" class="lang-select" @change="onChange($event)">
+          <option
+            v-for="locale in $i18n.availableLocales"
+            :key="`locale-${locale}`"
+            :value="locale"
+          >
+            {{ locale.split("-")[0].toUpperCase() }}
+          </option>
         </select>
       </div>
     </div>
@@ -35,7 +40,7 @@
             class="header__collapsible--action cursor-pointer"
             @click="showInfo = !showInfo"
           >
-            Hakkımızda
+            {{ $t("aboutus") }}
           </div>
         </div>
         <div class="flex justify-center">
@@ -56,12 +61,12 @@
         <ul class="flex items-center">
           <a href="/hakkimizda" class="nav-item subMenu">Ağanlar Group</a>
           <a href="/erolagan" class="nav-item subMenu">Erol Ağan</a>
-          <a href="/basindabiz" class="nav-item subMenu">Basında Biz</a>
+          <a href="/basindabiz" class="nav-item subMenu">{{ $t("press") }}</a>
 
-          <a href="/kalite" class="nav-item subMenu">Kalite</a>
-          <a href="/haberler" class="nav-item subMenu">Haberler</a>
+          <a href="/kalite" class="nav-item subMenu">{{ $t("quality") }}</a>
+          <a href="/haberler" class="nav-item subMenu">{{ $t("news") }}</a>
 
-          <a href="/contact" class="nav-item subMenu">İletişim</a>
+          <a href="/contact" class="nav-item subMenu">{{ $t("contact") }}</a>
         </ul>
       </div>
     </div>
@@ -88,6 +93,7 @@ export default {
   },
   data() {
     return {
+      locale: null || localStorage.getItem("lang"),
       showInfo: false,
       routes: [
         {
@@ -118,6 +124,16 @@ export default {
       return this.$route.name;
     },
   },
+  methods: {
+    onChange(event) {
+      const lang = event.target.value;
+      localStorage.setItem("lang", lang);
+      this.$i18n.locale = lang;
+    },
+  },
+  created() {
+    this.$i18n.locale = localStorage.getItem("lang");
+  },
 };
 </script>
 
@@ -139,6 +155,7 @@ export default {
 
 .cursor-pointer {
   cursor: pointer;
+  margin: 0 20px;
 }
 
 .bg-gray {

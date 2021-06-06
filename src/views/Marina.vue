@@ -100,7 +100,7 @@ export default {
           name: "Rezervasyon",
           content:
             "Yat rezervasyon işlemleriniz için formu doldurun, size ulaşalım. Ağanlar Marina ile ilgili ihtiyacınız olan konuda rezervasyon yaptırın, konuyla ilgili deneyimli ekibimiz hemen sizinle iletişime geçsin.\n İletişim:marina@aganlar.com",
-          url: "yacht",
+          url: "",
           imageUrl: "/assets/img/marina-index-img-4.png",
         },
         {

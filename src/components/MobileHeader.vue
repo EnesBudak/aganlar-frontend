@@ -36,17 +36,17 @@
                   <a href="/erolagan">Erol Ağan</a>
                 </li>
                 <li>
-                  <a href="/basindabiz">Basında Biz</a>
+                  <a href="/basindabiz">{{ $t("press") }}</a>
                 </li>
                 <li>
-                  <a href="/kalite">Kalite</a>
+                  <a href="/kalite">{{ $t("quality") }}</a>
                 </li>
                 <li>
-                  <a href="/haberler">Haberler</a>
+                  <a href="/haberler">{{ $t("news") }}</a>
                 </li>
 
                 <li>
-                  <a href="/iletisim">İletişim</a>
+                  <a href="/iletisim">{{ $t("contact") }}</a>
                 </li>
                 <li>
                   <a href="/teknelerimiz">

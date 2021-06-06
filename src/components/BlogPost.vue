@@ -3,7 +3,7 @@
     <div class="wrap">
       <div class="wrap_float">
         <div class="title_wrap">
-          <h2 class="title">Haberler</h2>
+          <h2 class="title">{{ $t("news") }}</h2>
           <!-- <p class="subtitle">Watch and be inspired</p> -->
           <!-- <div class="controls">
             <a href="#" class="link">Tüm Haberler</a>

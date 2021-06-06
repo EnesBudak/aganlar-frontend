@@ -19,7 +19,7 @@
                   <a href="/blog">Blog</a>
                 </li>
                 <li>
-                  <a href="/basindabiz">Basında Biz</a>
+                  <a href="/basindabiz">{{ $t("press") }}</a>
                 </li>
                 <!-- <li><a href="search-results.html">Logolarımız</a></li> -->
               </ul>
@@ -49,7 +49,7 @@
           </div>
           <div class="right" style="margin-top: 2rem">
             <div class="col">
-              <h2>Aganları Takip Edin!</h2>
+              <h2>{{ $t("follow") }}</h2>
             </div>
 
             <div class="socials social-links" style="margin-top: 10%">

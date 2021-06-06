@@ -54,9 +54,9 @@
                 >
                   <!-- <p class="country">North Africa</p> -->
 
-                  <h3 class="item_title">{{ category.name }}</h3>
+                  <h3 class="item_title">{{ $t(category.name) }}</h3>
                   <p class="item_text">
-                    {{ category.content }}
+                    {{ $t(category.content) }}
                   </p>
                 </div>
               </a>
@@ -78,44 +78,38 @@ export default {
     return {
       yatchsCategories: [
         {
-          name: "TERSANEMİZ",
-          content:
-            "450 ton kapasitesiyle Türkiye’nin en yüksek taşıma hacmine sahip travellift’i ile hizmet veren marinamızda tekne ihtiyaçlarınızı karşılıyor, farklı boyutlardaki tekne siparişlerinizde “anahtar teslim” hizmetimizle hayallerinizi gerçeğe dönüştürüyoruz.",
+          name: "shipyardcontentname",
+          content: "shipyardcontent",
           url: "tersanemiz",
           imageUrl: "/assets/img/yachts-index-img-1.png",
         },
         {
-          name: "TEKNELERİMİZ",
-          content:
-            "Tamamladığımız her yat, kendi seyir defterini oluşturmak için Bodrum’dan çıkıyor yola. Şimdiye kadar tamamladığımız eşsiz yat tasarımlarını buradan inceleyebilirsiniz",
+          name: "yachtcontentname",
+          content: "yachtcontent",
           url: "yacht/?type=normal",
           imageUrl: "/assets/img/yachts-index-img-2.png",
         },
         {
-          name: "PROJELERİMİZ",
-          content:
-            "Yeni başlanan her üretim yolculuğunda mükemmel denge ve eşsiz tasarımı el işçiliğiyle kurguluyoruz. Devam eden projelerimizi buradan inceleyebilirsiniz.",
+          name: "projectscontentname",
+          content: "projectscontent",
           url: "projelerimiz",
           imageUrl: "/assets/img/yachts-index-img-3.png",
         },
         {
-          name: "TAMİR VE YENİLEME",
-          content:
-            "34.000 m2’lik tersanemizde, 80 çalışanımızla, yılda 500’e yakın tamir ve yenileme operasyonunu üstleniyoruz. Yaptığımız tüm çalışmalar üst düzey kalite standartlarını yakalayabilmemiz adına uluslararası klas firmaları ve bayrak devleti sörveyleri tarafından kontrol edilip onaylanıyor",
+          name: "repaircontentname",
+          content: "repaircontent",
           url: "yachtstamir",
           imageUrl: "/assets/img/yachts-index-img-5.png",
         },
         {
-          name: "REFİT PORTFOLIO",
-          content:
-            "Bazen küçük bir dokunuş değiştirir bir yatın tüm duruşunu. Ağanlar dokunuşuyla tamir edilen yatları buradan inceleyebilirsiniz.",
+          name: "refitcontentname",
+          content: "refitcontent",
           imageUrl: "/assets/img/ycht-index-refit.png",
           url: "refit/?type=refit",
         },
         {
-          name: "İLETİŞİM",
-          content:
-            "Bazen küçük bir dokunuş değiştirir bir yatın tüm duruşunu. Ağanlar dokunuşuyla tamir edilen yatları buradan inceleyebilirsiniz.",
+          name: "contactcontentname",
+          content: "contactcontent",
           imageUrl: "/assets/img/yachts-index-banner-new.png",
           url: "contact",
         },
