@@ -93,7 +93,7 @@ export default {
   },
   data() {
     return {
-      locale: null || localStorage.getItem("lang"),
+      locale: localStorage.getItem("lang") || "tr-TR",
       showInfo: false,
       routes: [
         {
