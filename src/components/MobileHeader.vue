@@ -27,7 +27,7 @@
             <ul id="menu">
               <ul class="grid gap-30 items-center justify-center text-center">
                 <li>
-                  <a href="/hakkimizda">Hakkımızda</a>
+                  <a href="/hakkimizda">{{ $t("aboutus") }}</a>
                 </li>
                 <li>
                   <a href="/hakkimizda">Ağanlar Group</a>
