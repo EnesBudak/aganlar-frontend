@@ -5,41 +5,17 @@
         <div class="line"></div>
         <h1 class="title">Erol Agan</h1>
         <p>
-          Gulet tasarlamak hiç bir zaman kolay bir iş olmamıştır. İşe kendini
-          adamak, çok çalışmak, ve titizlik ister. Çünkü yapılacak tekne
-          yenilmezliği ve güzelliği ile ünlenmiş “Bodrum Tipi Gulettir." Tamamen
-          ahşaptan yapılan bu tekneler uzun yıllara dayalı çalışmalar ve
-          derinlemesine incelemer sonucunda elde edilen meşakkatli bir bilgi
-          kümesinin eseridir. Namı meşhur Akdeniz dalgalarının gücüne, sert
-          rüzgarlara dayanmalı aynı zamanda insana kendini evinde hissettiren
-          bir rahatlık içinde yeterince rahat ve geniş olmalı, işçiliği insanı
-          çekerken bir gün batımı bir kuğu misali süzülerek ilerlemelidir.
+          {{ $t("erolagancontent1") }}
         </p>
         <p>
-          İşte Erol Ağan böylesi dayanıklı, lüks ve konforlu guletlerin mimarı
-          ve yaratıcısıdır. Sorsalar Türkiye yat ve tekne imalat sektöründe kim
-          kimdir; gerçek bir tekne imalatçısı, yenilikçi ve sektöre kattıkları
-          saymakla bitmez Erol Ağan akla ilk gelen isimler arasında olacaktır.
-          1936 yılında Bodrum’da doğan Erol Ağan olağan üstü iş geçmişi ve
-          uluslararası tanınmışlığıyla hem gulet tasarımı ve hem de yapımı
-          konusunda artık bulunması oldukça ender ustalardan birisi olarak
-          karşımıza çıkmaktadır.
+          {{ $t("erolagancontent2") }}
         </p>
 
         <p>
-          Ağanlar Tersanesinin kurucusu, kökenleri deniz ve gulet olan bir
-          aileden gelmektedir. O, atalarının ayak izlerini titizlikle ama daha
-          çok çalışarak ve yaratarak izlemiştir. Bu başarısını kimi zaman ustası
-          Ziya’ya kimi zaman da işine olan derin sevgisinde ve çalışma
-          disiplininde aramak gerekir.
+          {{ $t("erolagancontent3") }}
         </p>
         <p>
-          Erol Ağan görevlerini ikinci kuşak Ağanlara başarıyla teslim etmekle
-          birlikte çocuklarından birisi gördüğü tersanesini ziyaret etmekten hiç
-          bir zaman kendisini alamamaktadır. Bugün hala onun her sabah düzenli
-          işe gelişini, o çok sevdiği Türk kahvesini çalışanlarla konuşarak
-          içişini seyreden bizler, şirkete kattığı vizyonun ne kadar sarsılmaz
-          olduğunu bilerek ve hissederek çalışıyoruz.
+          {{ $t("erolagancontent4") }}
         </p>
       </div>
 

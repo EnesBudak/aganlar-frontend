@@ -22,10 +22,10 @@
               ]"
             >
               <div class="tour_item_bottom">
-                <h3 class="_title">{{ category.name }}</h3>
+                <h3 class="_title">{{ $t(category.name) }}</h3>
                 <div class="_info">
                   <div class="_info_left">
-                    <div class="cost">Detaylar için tıklayın!</div>
+                    <div class="cost">{{ $t("clickfordetail") }}</div>
                   </div>
                 </div>
               </div>
@@ -47,28 +47,28 @@ export default {
     return {
       yatchsCategories: [
         {
-          name: "Satılık Yatlar",
+          name: "forsale",
           content:
             "Uzunluk, fiyat, tip, kapasite… Tercihlerinize en uygun yata burada karar verin.",
           url: "/brokerage/sell/?type=sell",
           imageUrl: "/assets/img/brokerage-index-img-1-new.jpg",
         },
         {
-          name: "Kiralık Yatlar",
+          name: "forrent",
           content:
             "İster denemek, ister öğrenmek, isterseniz de uzun soluklu yolculuklarınız için kiralama seçenekleri.",
           url: "/brokerage/rent/?type=rent",
           imageUrl: "/assets/img/brokerage-index-img-2.png",
         },
         {
-          name: "Rotalar",
+          name: "routes",
           content:
             "Bodrum’un maviliğine doğru atacağınız her adımda ruhunuz yenilenecek.",
           url: "",
           imageUrl: "/assets/img/brokerage-index-rotalar-img.png",
         },
         {
-          name: "İLETİŞİM",
+          name: "contact",
           content: "N 37° 00´ 49.10E 27° 27´ 04.44VHF: 72 info@aganlar.com",
           imageUrl: "/assets/img/lokasyon-img.png",
           url: "contact",

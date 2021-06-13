@@ -6,7 +6,7 @@
     <router-view></router-view>
     <Footer />
   </div>
-  <div style="margin-top: 5%" class="popup registration" id="booking">
+  <div class="popup registration" id="booking">
     <div class="scroll">
       <div class="scroll_wrap">
         <div class="popup-head">
@@ -14,31 +14,76 @@
         </div>
         <div class="popup-body">
           <div class="subtitle">
-            Fill in the registration form and save your favorite tours,
-            synchronize them on all devices
+            Fill in the reservation form.We will contant you as soon as possible
           </div>
           <div class="form">
-            <input type="text" class="input" placeholder="Username" />
-            <input type="text" class="input" placeholder="Name" />
-            <input type="text" class="input" placeholder="Surename" />
-            <input type="email" class="input" placeholder="Email" />
-            <input type="password" class="input" placeholder="Password" />
             <input
-              type="password"
+              type="text"
               class="input"
-              placeholder="Password Repeat"
+              placeholder="Name "
+              v-model="name"
+              :class="name != '' ? 'border-red' : ''"
+            />
+            <input
+              type="text"
+              class="input"
+              placeholder="Surname"
+              v-model="surname"
+              :class="surname != '' ? 'border-red' : ''"
+            />
+            <input
+              type="email"
+              class="input"
+              placeholder="Email"
+              v-model="email"
+              :class="email != '' ? 'border-red' : ''"
+            />
+            <input
+              type="text"
+              class="input"
+              placeholder="Phone"
+              v-model="phone"
+              :class="phone != '' ? 'border-red' : ''"
+            />
+            <input
+              type="text"
+              class="input"
+              placeholder="Yacht Name"
+              :class="yachtName != '' ? 'border-red' : ''"
+              v-model="yachtName"
+            />
+            <input
+              type="date"
+              class="input"
+              :class="arrivalDate != '' ? 'border-red' : ''"
+              placeholder="Arrival Date"
+              v-model="arrivalDate"
+            />
+            <input
+              type="date"
+              class="input"
+              :class="departureDate != '' ? 'border-red' : ''"
+              placeholder="Departure Date "
+              v-model="departureDate"
+            />
+            <textarea
+              type="text"
+              class="input"
+              :class="message != '' ? 'border-red' : ''"
+              placeholder="Message"
+              v-model="message"
             />
 
-            <button class="submit button js-submit">Registration</button>
+            <button class="submit button" @click="submitForm">Book Now</button>
           </div>
         </div>
-        <div class="popup-foot">
+        <!-- <div class="popup-foot">
           <p>Sign Up via social networks</p>
           <div class="social-links">
             <a href="#" class="link facebook"><span></span></a>
             <a href="#" class="link twitter"><span></span></a>
           </div>
-        </div>
+        </div> -->
       </div>
     </div>
     <div class="close"></div>
@@ -54,10 +99,56 @@ export default {
     Header,
     Footer,
   },
+  data() {
+    return {
+      name: "",
+      surname: "",
+      email: "",
+      phone: "",
+      yachtName: "",
+      arrivalDate: "",
+      departureDate: "",
+      message: "",
+    };
+  },
+  methods: {
+    submitForm() {
+      console.log("selamm");
+      if (
+        this.name != "" &&
+        this.surname != "" &&
+        this.email != "" &&
+        this.phone != "" &&
+        this.yachtName != "" &&
+        this.arrivalDate != "" &&
+        this.departureDate != "" &&
+        this.message != ""
+      ) {
+        this.$notify({
+          title: "Başarılı",
+          message:
+            "Rezervasyonunuz başarıyla yapıldı, en kısa sürede sizinle iletişime geçilecektir.",
+          type: "success",
+        });
+      } else {
+        this.$notify({
+          title: "Başarısız",
+          message: "Lütfen gerekli alanları doldurunuz!",
+          type: "warning",
+        });
+      }
+    },
+  },
 };
 </script>
 
 <style>
+.border-red {
+  border: 2px solid #00ff00 !important;
+}
+.popup {
+  z-index: 9999;
+}
 .bg-img {
   background-image: url("./assets/img/demo-bg.jpg");
   opacity: 0.4;

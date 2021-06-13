@@ -12,20 +12,7 @@
                 <!-- <p class="country">North Africa</p> -->
 
                 <p class="item_text">
-                  Ağanlar, 1961 yılında Erol Ağan tarafından kurulmuş olup,
-                  günümüzde Erol Ağan’ın oğulları; Mazlum, Fatih, Cem ve Erdem
-                  Ağan tarafından yönetilmektedir. Akdeniz kıyılarının en gözde
-                  tatil kenti Bodrum'un, İçmeler Mevkii'nde bulunan Ağanlar
-                  Tersanesi her tür yat tasarım, mühendislik, tamir ve bakım ile
-                  konaklama hizmetlerinin tamamının verilebildiği bir yer olup
-                  özellikle Ahşap Bodrum Guleti imalatında rakipsiz bir üne
-                  sahiptir. Ağanlar Tersanesi A.Ş. yat sahiplerine 50 yılı aşkın
-                  tecrübesiyle her tür ve her ebatta tekne projelerinde anahtar
-                  teslim hizmet sunmaktadır. Ağanlar Tersanesi'nde vizyon ''Siz
-                  hayal edin, biz hayallerinizi gerçeğe dönüştürelim''
-                  olduğundan; en yüksek standartlarda ISO belgemiz ve kalite
-                  anlayışımız ile giderek önemi artan bu sektörü büyütmek
-                  şirketimizin en önemli hedeflerinden biridir.
+                  {{ $t("aganlargroupcontent") }}
                 </p>
               </div>
             </div>
@@ -167,6 +154,9 @@ export default {
 </script>
 
 <style scoped>
+.travel-list .posts .item_right {
+  max-width: 100%;
+}
 .travel-list .posts .item_right {
   float: none;
   display: flex;

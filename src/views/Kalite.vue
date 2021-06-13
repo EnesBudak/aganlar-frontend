@@ -5,12 +5,7 @@
         <div class="wrap_float" style="margin-top: 5%">
           <div class="title"></div>
           <div class="text">
-            Çevreye vereceği zararların en az seviyeye indirilmesi ve çevre
-            kirliliği risklerinin kaynağında önlenmesi konusunda başarılı
-            olabilmek için ISO 9001 Kalite Yönetim Sistemi standardını
-            uygulanıyoruz. Tersanemizde ve marinada kalite yönetimi yanında ISO
-            14001 Çevre Yönetim Sistemi ve OHSAS 18001 İş Sağlığı ve Güvenliği
-            Yönetim Sistemi standartlarını uygulamaktadır.
+            {{ $t("qualitycontent") }}
           </div>
         </div>
       </div>

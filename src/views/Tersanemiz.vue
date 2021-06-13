@@ -25,7 +25,6 @@
                   class="item"
                 >
                   <!-- <p class="country">North Africa</p> -->
-
                   <p class="item_text">
                     {{ $t(category.content) }}
                   </p>
@@ -69,5 +68,8 @@ export default {
   display: flex !important;
 
   justify-content: center !important;
+}
+.travel-list .posts .item_right {
+  max-width: 100%;
 }
 </style>

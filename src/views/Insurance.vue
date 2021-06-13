@@ -2,10 +2,10 @@
   <div style="margin-top: 5%">
     <Slider
       height="100"
-      title="Sigorta alanında müşteri memnuniyetinin önemini biliyor, her başvuruyu şeffaf ve objektif bir anlayışla değerlendiriyoruz."
+      title="insurancecontent"
       url="http://www.aganlarsigorta.com"
       imageUrl="/assets/img/1872019155327-6.yacht_insurance_510.jpg"
-      buttonTitle="Detaylı bilgi almak için internet sitemizi ziyaret edebilirsiniz!"
+      buttonTitle="clickfordetail"
     />
   </div>
 </template>

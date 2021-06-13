@@ -6,10 +6,9 @@
         <div class="page_body">
           <div class="contacts-left">
             <div class="tel">
-              <p>Telefon</p>
+              <p>{{ $t("tel") }}</p>
 
               <a href="tel:+90252444480">+90 (252) 444 4 808</a>
-              <a href="tel:+902523138766"> +90 (252) 313 7 766</a>
             </div>
             <div class="tel">
               <p>Email</p>

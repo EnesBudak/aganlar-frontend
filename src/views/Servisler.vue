@@ -54,9 +54,9 @@
                 >
                   <!-- <p class="country">North Africa</p> -->
 
-                  <h3 class="item_title">{{ category.name }}</h3>
+                  <h3 class="item_title">{{ $t(category.name) }}</h3>
                   <p class="item_text">
-                    {{ category.content }}
+                    {{ $t(category.content) }}
                   </p>
                 </div>
               </a>
@@ -78,23 +78,20 @@ export default {
     return {
       yatchsCategories: [
         {
-          name: "Çekek Hizmetleri",
-          content:
-            "Ağanlar Marina, karada 34,000m2 lik kara park ve teknik servis alanı üzerinde hizmet vermektedir. 450 ton Travel-Lift ile Ege Bölgesi’nin en yüksek kapasitesine sahiptir. Maximum genişliği 11,5m olan 3 adet çekek havuzumuzda aynı anda rahatlıkla operasyon yapabilme kabiliyetine sahibiz. İstendiği taktirde yatların ihtiyacına uygun depo kiralamaktayız (g4m x d3m x y2m). Yatlarınız çekildikten sonra basınçlı su sitemi ile güvenli şekilde alt yıkaması yapılır. VHF 72 kanalında bize ulaşabilirsiniz.",
+          name: "cargoservices",
+          content: "cargoservicescontent",
           url: "",
           imageUrl: "/assets/img/marina-servisler-3.png",
         },
         {
-          name: "Bağlama",
-          content:
-            "210m’lik baglama alanında 100m’ye kadar yat ağırlayabiliyoruz. Çelik kazıklara bağlı zincir sistemi ile bölgenin en güvenli tonoz sistemine sahibiz. Yatlara dalgıç hizmeti, 720 Amper’e kadar elektrik ve arıtılmış suyun haricinde 24 saat WC/Duş ve güvenlik hizmeti eşliğinde ihtiyaçlarınızı konforlu bir şekilde karşılayabilirsiniz. 100 metre yürüme mesafesinde hıdravat ve yat malzemeleri satan mağazaları, ve birçok markaların yetkili servisleri bulabilirsiniz. Marina’nın hemen yakınında 6 adet restoran ve 4 adet market yaz/kış sürekli hizmet",
+          name: "tyingservices",
+          content: "tyingservicescontent",
           url: "yacht",
           imageUrl: "/assets/img/marina-servisler-1.png",
         },
         {
-          name: "Vinç ve Treyler",
-          content:
-            "• 450 t Travel-Lift • 100 t Travel-Lift • 40 t Travel-Lift • 430 t Treyler• 40 t Mobil Vinç• 5 t Forklift (4.5m)",
+          name: "craneandtrailer",
+          content: "craneandtrailercontent",
           url: "",
           imageUrl: "/assets/img/marina-servisler-2.png",
         },

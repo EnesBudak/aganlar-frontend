@@ -59,9 +59,9 @@
                 >
                   <!-- <p class="country">North Africa</p> -->
 
-                  <h3 class="item_title">{{ category.name }}</h3>
+                  <h3 class="item_title">{{ $t(category.name) }}</h3>
                   <p class="item_text">
-                    {{ category.content }}
+                    {{ $t(category.content) }}
                   </p>
                 </div>
               </a>
@@ -83,29 +83,26 @@ export default {
     return {
       yatchsCategories: [
         {
-          name: "Servisler",
-          content:
-            "450 ton kapasitesiyle Türkiye’nin en yüksek taşıma hacmine sahip travellift’i ile hizmet veren marinamızda tekne ihtiyaçlarınızı karşılıyor, farklı boyutlardaki tekne siparişlerinizde “anahtar teslim” hizmetimizle hayallerinizi gerçeğe dönüştürüyoruz.",
+          name: "services",
+          content: "servicescontent",
           url: "servisler",
           imageUrl: "/assets/img/marina-index-img-1.png",
         },
         {
-          name: "Yat Lift",
-          content:
-            "Ege Bölgesi'nin en büyük travellift'lerinden birini içeren yat lift bölümüzde en uygun çekek hizmetlerimizi bulabilirsiniz.",
+          name: "travellift",
+          content: "travelliftcontent",
           url: "yatlift",
           imageUrl: "/assets/img/marina-index-img-2.png",
         },
         {
-          name: "Rezervasyon",
-          content:
-            "Yat rezervasyon işlemleriniz için formu doldurun, size ulaşalım. Ağanlar Marina ile ilgili ihtiyacınız olan konuda rezervasyon yaptırın, konuyla ilgili deneyimli ekibimiz hemen sizinle iletişime geçsin.\n İletişim:marina@aganlar.com",
+          name: "reservation",
+          content: "reservationcontent",
           url: "",
           imageUrl: "/assets/img/marina-index-img-4.png",
         },
         {
-          name: "İLETİŞİM",
-          content: "N 37° 00´ 49.10E 27° 27´ 04.44VHF: 72 marina@aganlar.com",
+          name: "contact",
+          content: "contactcontent",
           imageUrl: "/assets/img/lokasyon-img.png",
           url: "contact",
         },

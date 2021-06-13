@@ -25,7 +25,7 @@
                 {{
                   title == null
                     ? "Siz hayal edin, biz hayallerinizi gerçeğe dönüştürelim"
-                    : title
+                    : $t(title)
                 }}
               </p>
 
@@ -34,7 +34,9 @@
                   :href="url == null ? 'contact' : url"
                   class="btn button"
                   tabindex="0"
-                  >{{ buttonTitle == null ? "İletişime Geç" : buttonTitle }}</a
+                  >{{
+                    buttonTitle == null ? "İletişime Geç" : $t(buttonTitle)
+                  }}</a
                 >
               </div>
               <div class="next_title">AGANLAR</div>

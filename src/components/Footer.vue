@@ -28,7 +28,7 @@
               <div class="contacts_info">
                 <ul>
                   <li>
-                    Telefon
+                    {{ $t("tel") }}
 
                     <a href="tel:+90252444480">+90 (252) 444 4 808</a>
                   </li>

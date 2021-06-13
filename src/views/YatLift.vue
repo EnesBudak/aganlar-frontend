@@ -27,7 +27,7 @@
                   <!-- <p class="country">North Africa</p> -->
 
                   <p class="item_text">
-                    {{ category.content }}
+                    {{ $t(category.content) }}
                   </p>
                 </a>
               </div>
@@ -49,8 +49,7 @@ export default {
     return {
       yatchsCategories: [
         {
-          content:
-            "Kasım 2010' da hizmete giren; 450 tonluk, Türkiye' nin ve Doğu Akdeniz' in en büyük TraveLiftimizle Türkiye' de çekek hizmetinde yeni bir dönemin kapısını araladık. 450 ton TraveLiftin yanında 100 ton ve 40 ton liftlerimizle 11,5 m genişliğe kadar olan tüm yatlara en uygun çekek hizmeti veriyoruz.",
+          content: "travelliftcontent2",
           url: "",
         },
       ],
@@ -62,6 +61,9 @@ export default {
 <style scoped>
 .travel-list .posts .item_right {
   line-height: 2rem;
+}
+.travel-list .posts .item_right {
+  max-width: 100%;
 }
 .center {
   float: none;

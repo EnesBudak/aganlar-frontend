@@ -46,12 +46,12 @@
                 type="card"
               >
                 <el-carousel-item
-                  v-for="item in getYacht.imageUrl.length"
-                  :key="item"
+                  v-for="image in getYacht.imageUrl"
+                  :key="image"
                 >
-                  <a v-for="(image, index) in imageList" :key="index">
-                    <img :src="image" alt="" />
-                  </a>
+                  <el-image :src="image" :preview-src-list="getYacht.imageUrl">
+                    alt="" >
+                  </el-image>
                 </el-carousel-item>
               </el-carousel>
             </div>
@@ -64,7 +64,7 @@
         <div class="wrap_float">
           <div class="left_content">
             <div class="overview js-section content-block" id="overview">
-              <div class="title">Açıklama</div>
+              <div class="title">{{ $t("description") }}</div>
               <div class="description">
                 Alganlar tersanesi olarak türkiyedeki en kaliteli lüx yat ve
                 tekneleri ürettigimizden şüphemiz yoktur.İstediginiz zaman gelip
@@ -74,7 +74,7 @@
                 <div class="day_item">
                   <div class="day_item-head">
                     <div class="preview">
-                      <div class="p">Genel</div>
+                      <div class="p">{{ $t("main") }}</div>
                     </div>
                     <div class="_title"></div>
                     <div class="element"></div>
@@ -101,7 +101,7 @@
                 <div class="day_item" id="temelBoyut">
                   <div class="day_item-head">
                     <div class="preview">
-                      <div class="p">Temel Boyutlar</div>
+                      <div class="p">{{ $t("maindimentions") }}</div>
                     </div>
                     <div class="_title"></div>
                     <div class="element"></div>
@@ -126,7 +126,7 @@
                 <div class="day_item" id="yasamMahali">
                   <div class="day_item-head">
                     <div class="preview">
-                      <div class="p">Yaşam Mahali</div>
+                      <div class="p">{{ $t("livingspace") }}</div>
                     </div>
                     <div class="_title"></div>
                     <div class="element"></div>
@@ -154,7 +154,7 @@
                 <div class="day_item">
                   <div class="day_item-head" id="armaDonanimi">
                     <div class="preview">
-                      <div class="p">Arma Donanımı</div>
+                      <div class="p">{{ $t("riggingandhardware") }}</div>
                     </div>
                     <div class="_title"></div>
                     <div class="element"></div>
@@ -177,7 +177,7 @@
                 <div class="day_item" id="teknikBilgiler">
                   <div class="day_item-head">
                     <div class="preview">
-                      <div class="p">Teknik Bilgiler</div>
+                      <div class="p">{{ $t("technicalinformations") }}</div>
                     </div>
                     <div class="_title"></div>
                     <div class="element"></div>
@@ -227,7 +227,7 @@
                 <div class="day_item" id="guverteElemanlari">
                   <div class="day_item-head">
                     <div class="preview">
-                      <div class="p">Güverte Elemanları</div>
+                      <div class="p">{{ $t("riggingandhardware") }}</div>
                     </div>
                     <div class="_title"></div>
                     <div class="element"></div>
@@ -250,7 +250,7 @@
                 </div>
               </div>
             </div>
-            <div class="included js-section content-block" id="included">
+            <!-- <div class="included js-section content-block" id="included">
               <div class="title">Dahil Hizmetler</div>
               <ul>
                 <li>
@@ -270,7 +270,7 @@
                   <span class="li_subtitle">Olası kötü bir durumda destek</span>
                 </li>
               </ul>
-            </div>
+            </div> -->
             <div class="location js-section content-block" id="location">
               <div class="title">Location</div>
               <div class="map">
@@ -376,12 +376,26 @@
             <div class="navigation" id="sidebar-navigation">
               <ul>
                 <li><a href="#head">Resimler</a></li>
-                <li><a href="#overview">Genel</a></li>
-                <li><a href="#temelBoyut">Temel Boyutlar</a></li>
-                <li><a href="#yasamMahali">Yaşam Mahali</a></li>
-                <li><a href="#armaDonanimi">Arma Donanımı</a></li>
-                <li><a href="#teknikBilgiler">Teknik Bilgiler</a></li>
-                <li><a href="#guverteElemanlari">Güverte Elemanları</a></li>
+                <li>
+                  <a href="#overview">{{ $t("main") }}</a>
+                </li>
+                <li>
+                  <a href="#temelBoyut">{{ $t("maindimentions") }}</a>
+                </li>
+                <li>
+                  <a href="#yasamMahali">{{ $t("livingspace") }}</a>
+                </li>
+                <li>
+                  <a href="#armaDonanimi">{{ $t("riggingandhardware") }}</a>
+                </li>
+                <li>
+                  <a href="#teknikBilgiler">{{
+                    $t("technicalinformations")
+                  }}</a>
+                </li>
+                <li>
+                  <a href="#guverteElemanlari">{{ $t("deckequipment") }}</a>
+                </li>
               </ul>
             </div>
             <a class="book-now button js-popup-open" data-href="#book-now">
