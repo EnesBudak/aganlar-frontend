@@ -14,7 +14,16 @@
           <div class="wrap_float">
             <div class="top-info">
               <!-- <div class="country">{{ getYacht.age }}</div> -->
-              <div class="tour_title" style="color: #00184a">
+              <div
+                class="tour_title"
+                style="
+                  color: #00184a;
+                  background-color: #fff;
+                  border-radius: 50px;
+                  opacity: 0.8;
+                  text-align: center;
+                "
+              >
                 {{ getYacht.name }}
               </div>
               <!-- <div class="controls">
