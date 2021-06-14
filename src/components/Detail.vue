@@ -2,7 +2,7 @@
   <div class="tour_page right-sidebar">
     <div
       class="tour_page_head"
-      style="background-image: url('/assets/img/yat1.jpg')"
+      style="background-image: url('/assets/img/yatt.jpeg')"
     >
       <div class="breadcrumbs">
         <div class="wrap">
@@ -49,9 +49,7 @@
                   v-for="image in getYacht.imageUrl"
                   :key="image"
                 >
-                  <el-image :src="image" :preview-src-list="getYacht.imageUrl">
-                    alt="" >
-                  </el-image>
+                  <img :src="image" :preview-src-list="getYacht.imageUrl" />
                 </el-carousel-item>
               </el-carousel>
             </div>
