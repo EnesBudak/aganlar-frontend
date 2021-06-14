@@ -2,7 +2,7 @@
   <div class="tour_page right-sidebar">
     <div
       class="tour_page_head"
-      style="background-image: url('/assets/img/yatt.png')"
+      style="background-image: url('/assets/img/yat2.jpeg')"
     >
       <div class="breadcrumbs">
         <div class="wrap">
@@ -14,7 +14,7 @@
           <div class="wrap_float">
             <div class="top-info">
               <!-- <div class="country">{{ getYacht.age }}</div> -->
-              <div class="tour_title">
+              <div class="tour_title" style="color: #00184a">
                 {{ getYacht.name }}
               </div>
               <!-- <div class="controls">
