@@ -25,7 +25,7 @@
               :style="[
                 yacht.imgUrl !== ''
                   ? {
-                      'background-image': 'url(' + yacht.imageUrl + ')',
+                      'background-image': 'url(' + yacht.imageUrl[0] + ')',
                     }
                   : { background: 'url(img/yat.jpg) center no-repeat' },
               ]"
