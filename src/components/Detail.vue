@@ -382,7 +382,9 @@
           <div class="right_content sidebar">
             <div class="navigation" id="sidebar-navigation">
               <ul>
-                <li><a href="#head">Resimler</a></li>
+                <li>
+                  <a href="#head">{{ $t("images") }}</a>
+                </li>
                 <li>
                   <a href="#overview">{{ $t("main") }}</a>
                 </li>
