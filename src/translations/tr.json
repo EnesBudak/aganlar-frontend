@@ -41,6 +41,7 @@
     "travelliftcontent":"Ege Bölgesi'nin en büyük travellift'lerinden birini içeren yat lift bölümüzde en uygun çekek hizmetlerimizi bulabilirsiniz.",
     "travelliftcontent2":"Kasım 2010' da hizmete giren; 450 tonluk, Türkiye' nin ve Doğu Akdeniz' in en büyük TraveLiftimizle Türkiye' de çekek hizmetinde yeni bir dönemin kapısını araladık. 450 ton TraveLiftin yanında 100 ton ve 40 ton liftlerimizle 11,5 m genişliğe kadar olan tüm yatlara en uygun çekek hizmeti veriyoruz.",
     "reservationcontent":"Yat rezervasyon işlemleriniz için formu doldurun, size ulaşalım. Ağanlar Marina ile ilgili ihtiyacınız olan konuda rezervasyon yaptırın, konuyla ilgili deneyimli ekibimiz hemen sizinle iletişime geçsin.",
+    "reservationmodalcontent":"Rezervasyon formunu doldurun, daha fazla bilgi için sizinle iletişime geçelim.",
     "services":"Servisler",
     "travellift":"Yat Lift",
     "reservation":"Rezervasyon",
@@ -62,7 +63,13 @@
     "technicalinformations":"Teknik Bilgiler",
     "deckequipment":"Güverte Elemanları",
     "riggingandhardware":"Arma Ve Donanımı",
-    "images":"Fotoğraflar"
+    "images":"Fotoğraflar",
+    "guests":"Kişi Kapasite",
+    "name":"İsim",
+    "email":"Email",
+    "yachtname":"Yat Adı",
+    "message":"Mesaj",
+    "periodmessage":"Kalmayı talep ettiğiniz süre."
 }      
 
 

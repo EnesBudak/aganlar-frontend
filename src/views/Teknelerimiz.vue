@@ -5,7 +5,7 @@
       <div class="wrap_float">
         <div class="wrap">
           <div class="wrap_float">
-            <h1 class="title">Teknelerimiz</h1>
+            <h1 class="title">{{ $t("yachtcontentname") }}</h1>
             <p class="subtitle"></p>
           </div>
         </div>
@@ -41,7 +41,7 @@
                     <div class="days">{{ yacht.age }} Model</div>
                     <div class="days">{{ yacht.loa }} LOA</div>
                     <div class="cost">
-                      {{ yacht.passengerCapacity }} Kişi Kapasite
+                      {{ yacht.passengerCapacity }} {{ $t("guests") }}
                     </div>
                   </div>
                 </div>

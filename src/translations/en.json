@@ -41,7 +41,8 @@
     "servicescontent":"Aganlar Marina, with its 450t, 100t and 40t travel lifts and a 430t trailer, hauls out and services yachts of considerable sizes.With the 34,000 square meters of dry-docking area and our regular carpentry, painting, rigging, and mechanical services, and highly skilled and versatile crew, Aganlar Shipyard & Marina offers a “one-stop shopping” destination for any project of any size to the yacht owner.",
     "travelliftcontent":"You can find our most suitable hauling-out services in our yacht lift section, which includes one of the biggest travel lifts in the Aegean Region",
     "travelliftcontent2":"The yacht lift has many advantages with high quality structure and flexible operation. With 450 ton, 100 ton, 40 ton travel lifts and a 430 Ton trailer Aganlar Marina hauls out and services yachts with maximum beam of 11.5 meters.",
-    "reservationcontent":"Fill out the form to book a mooring or hardstand space, and we will contact you. Ask questions about our services, and our experienced team will contact you immediately.",
+    "reservationcontent":"Fill out the form to get a quote or book a mooring or hardstand space in our shipyard.Ask your questions about our services and our experienced team will contact you immediately.",
+    "reservationmodalcontent":"Fill in the reservation form and we will contact you for further information.",
     "services":"Services",
     "travellift":"Travel Lift",
     "reservation":"Reservation",
@@ -63,6 +64,13 @@
     "deckequipment":"Deck Equipment",
     "riggingandhardware":"Rigging and Hardware",
     "description":"Description",
-    "images":"Images"
+    "images":"Images",
+    "guests":"Guests",
+    "name":"Name",
+    "email":"Email",
+    "yachtname":"Yacht Name",
+    "message":"Message",
+    "periodmessage":"The period you requested to stay."
+
 }
     

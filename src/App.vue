@@ -14,44 +14,40 @@
         </div>
         <div class="popup-body">
           <div class="subtitle">
-            Fill in the reservation form.We will contant you as soon as possible
+            {{ $t("reservationmodalcontent") }}
           </div>
           <div class="form">
             <input
               type="text"
               class="input"
-              placeholder="Name "
+              :placeholder="$t('name')"
               v-model="name"
               :class="name != '' ? 'border-red' : ''"
             />
             <input
-              type="text"
-              class="input"
-              placeholder="Surname"
-              v-model="surname"
-              :class="surname != '' ? 'border-red' : ''"
-            />
-            <input
               type="email"
               class="input"
-              placeholder="Email"
+              :placeholder="$t('email')"
               v-model="email"
               :class="email != '' ? 'border-red' : ''"
             />
             <input
               type="text"
               class="input"
-              placeholder="Phone"
+              :placeholder="$t('tel')"
               v-model="phone"
               :class="phone != '' ? 'border-red' : ''"
             />
             <input
               type="text"
               class="input"
-              placeholder="Yacht Name"
+              :placeholder="$t('yachtname')"
               :class="yachtName != '' ? 'border-red' : ''"
               v-model="yachtName"
             />
+            <div class="subtitle">
+              {{ $t("periodmessage") }}
+            </div>
             <input
               type="date"
               class="input"
@@ -66,11 +62,12 @@
               placeholder="Departure Date "
               v-model="departureDate"
             />
+
             <textarea
               type="text"
               class="input"
               :class="message != '' ? 'border-red' : ''"
-              placeholder="Message"
+              :placeholder="$t('message')"
               v-model="message"
             />
 
@@ -93,7 +90,7 @@
 <script>
 import Header from "./components/Header.vue";
 import Footer from "./components/Footer.vue";
-
+import axios from "axios";
 export default {
   components: {
     Header,
@@ -113,10 +110,8 @@ export default {
   },
   methods: {
     submitForm() {
-      console.log("selamm");
       if (
         this.name != "" &&
-        this.surname != "" &&
         this.email != "" &&
         this.phone != "" &&
         this.yachtName != "" &&
@@ -124,12 +119,28 @@ export default {
         this.departureDate != "" &&
         this.message != ""
       ) {
-        this.$notify({
-          title: "Başarılı",
-          message:
-            "Rezervasyonunuz başarıyla yapıldı, en kısa sürede sizinle iletişime geçilecektir.",
-          type: "success",
-        });
+        axios
+          .post("/mail", {
+            name: this.name,
+            email: this.email,
+            phone: this.phone,
+            yachtName: this.yachtName,
+            reservationDate: this.arrivalDate,
+            exitDate: this.departureDate,
+            message: this.message,
+            type: "Normal",
+          })
+          .then((res) => {
+            if (res.data.success) {
+              this.$notify({
+                title: "Başarılı",
+                message:
+                  "Rezervasyonunuz başarıyla yapıldı, en kısa sürede sizinle iletişime geçilecektir.",
+                type: "success",
+              });
+            }
+          })
+          .catch((err) => console.log(err));
       } else {
         this.$notify({
           title: "Başarısız",

@@ -85,12 +85,11 @@
       <div class="scroll">
         <div class="scroll_wrap">
           <div class="popup-head">
-            <div class="title">Marina Rezervasyon</div>
+            <div class="title">Marina {{ $t("reservation") }}</div>
           </div>
           <div class="popup-body">
             <div class="subtitle">
-              Fill in the reservation form.We will contant you as soon as
-              possible
+              {{ $t("reservationmodalcontent") }}
             </div>
             <div class="form">
               <input
@@ -100,13 +99,7 @@
                 v-model="name"
                 :class="name != '' ? 'border-red' : ''"
               />
-              <input
-                type="text"
-                class="input"
-                placeholder="Soyad"
-                v-model="surname"
-                :class="surname != '' ? 'border-red' : ''"
-              />
+
               <input
                 type="email"
                 class="input"
@@ -206,6 +199,7 @@
 </template>
 
 <script>
+import axios from "axios";
 import Slider from "../components/Slider.vue";
 export default {
   components: {
@@ -241,7 +235,6 @@ export default {
         },
       ],
       name: "",
-      surname: "",
       email: "",
       phone: "",
       yachtName: "",
@@ -257,10 +250,8 @@ export default {
   },
   methods: {
     submitForm() {
-      console.log("selamm");
       if (
         this.name != "" &&
-        this.surname != "" &&
         this.email != "" &&
         this.phone != "" &&
         this.yachtName != "" &&
@@ -268,12 +259,33 @@ export default {
         this.departureDate != "" &&
         this.message != ""
       ) {
-        this.$notify({
-          title: "Başarılı",
-          message:
-            "Rezervasyonunuz başarıyla yapıldı, en kısa sürede sizinle iletişime geçilecektir.",
-          type: "success",
-        });
+        axios
+          .post("/mail", {
+            name: this.name,
+            email: this.email,
+            phone: this.phone,
+            yachtName: this.yachtName,
+            reservationDate: this.arrivalDate,
+            exitDate: this.departureDate,
+            message: this.message,
+            width: this.width,
+            height: this.height,
+            deplasman: this.deplasman,
+            depth: this.depth,
+            flag: this.flag,
+            type: "Marina",
+          })
+          .then((res) => {
+            if (res.data.success) {
+              this.$notify({
+                title: "Başarılı",
+                message:
+                  "Rezervasyonunuz başarıyla yapıldı, en kısa sürede sizinle iletişime geçilecektir.",
+                type: "success",
+              });
+            }
+          })
+          .catch((err) => console.log(err));
       } else {
         this.$notify({
           title: "Başarısız",
