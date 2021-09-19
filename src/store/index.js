@@ -17,8 +17,8 @@ const  getters = {
   getYacht:state => state.yacht,
   getCategories:state => state.categories,
   getCart: state => state.cart,
-  cartSummary:state => state.cartTotal
-  
+  cartSummary:state => state.cartTotal,
+  getUserToken:state => state.token
 }
 
 const mutations = {
@@ -100,6 +100,7 @@ const actions = {
     try {
       commit("setLogout");
       localStorage.removeItem("token");
+      return {success:true}
     } catch (error) {
       
     }

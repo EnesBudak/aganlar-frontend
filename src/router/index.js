@@ -1,4 +1,7 @@
-import { createWebHistory, createRouter } from "vue-router";
+import {
+  createWebHistory,
+  createRouter
+} from "vue-router";
 import Home from "../views/Home.vue";
 import Yatchs from "../views/Yatchs.vue";
 import Teknelerimiz from "../views/Teknelerimiz.vue";
@@ -23,8 +26,9 @@ import YachtsTamir from '../views/YachtsTamir.vue'
 import BrokerageRent from "../views/BrokerageRent.vue";
 import BrokerageSell from "../views/BrokerageSell.vue";
 import Detail from '../views/Detail.vue'
-const routes = [
-  {
+import Admin from '../views/Admin.vue'
+import AdminLogin from '../views/AdminLogin.vue'
+const routes = [{
     path: "/home",
     name: "Home",
     component: Home,
@@ -145,6 +149,19 @@ const routes = [
     component: Haberler,
   },
   {
+    path: "/login",
+    name: "Login",
+    component: AdminLogin
+  },
+  {
+    path: "/admin",
+    name: "Admin",
+    component: Admin,
+    meta: {
+      requiresAuth: true
+    },
+  },
+  {
     // path: "*",
     path: "/:catchAll(.*)",
     name: "Home",
@@ -153,29 +170,29 @@ const routes = [
       requiresAuth: false
     }
   }
-  
+
   // {
   //   path: "/detail/:id",
   //   name: "Detail",
   //   component: Detail,
   // },
-//   {
-//     path: "/checkout",
-//     name: "Checkout",
-//     component: Checkout,
-//   },
-//   {
-//     path: "/login",
-//     name: "Login",
-//     component: Login,
-//   },
+  //   {
+  //     path: "/checkout",
+  //     name: "Checkout",
+  //     component: Checkout,
+  //   },
+  //   {
+  //     path: "/login",
+  //     name: "Login",
+  //     component: Login,
+  //   },
 ];
 
 const router = createRouter({
   history: createWebHistory(),
   routes,
   scrollBehavior() {
-    window.scrollTo(0,0);
+    window.scrollTo(0, 0);
   }
 });
 

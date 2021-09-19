@@ -1,10 +1,9 @@
 <template>
   <div class="container">
-    <a data-href="#booking" class="link js-popup-open buy-btn">Book now!</a>
-    <Header class="" />
-
+    <a v-if="this.$route.name != 'Admin'" data-href="#booking" class="link js-popup-open buy-btn">Book now!</a>
+    <Header class=""  v-if="this.$route.name != 'Admin'" />
     <router-view></router-view>
-    <Footer />
+    <Footer  v-if="this.$route.name != 'Admin'" />
   </div>
   <div class="popup registration" id="booking">
     <div class="scroll">
