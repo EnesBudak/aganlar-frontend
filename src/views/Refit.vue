@@ -38,9 +38,9 @@
                 <h3 class="_title">{{ yacht.name }}</h3>
                 <div class="_info">
                   <div class="_info_left">
-                    <div class="days">{{ yacht.age }} Model</div>
-                    <div class="days">{{ yacht.loa }} LOA</div>
-                    <div class="cost">
+                    <div class="days" v-show="yacht.age">{{ yacht.age }} Model</div>
+                    <div class="days"  v-show="yacht.loa">{{ yacht.loa }} LOA</div>
+                    <div class="cost"  v-show="yacht.passengerCapacity">
                       {{ yacht.passengerCapacity }} Kişi Kapasite
                     </div>
                   </div>
