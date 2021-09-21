@@ -45,7 +45,19 @@ import axios from 'axios'
         console.log(index, row)
       },
       handleDelete(index, row) {
-        console.log(index, row)
+          axios.delete(`/yacht/${row._id}`).then((response) => {
+            console.log(response);
+            this.tableData = response.data.result;
+        }).then((res) => {
+          if(res.data.success){
+            location.reload();
+          }
+        }).catch(() => {
+            this.$notify.error({
+          title: 'Hata',
+          message: 'Yat Silinemedi',
+        })
+        })
       },
     },
     created(){

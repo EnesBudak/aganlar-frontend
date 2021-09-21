@@ -73,12 +73,10 @@
             <div class="overview js-section content-block" id="overview">
               <div class="title">{{ $t("description") }}</div>
               <div class="description">
-                Alganlar tersanesi olarak türkiyedeki en kaliteli lüx yat ve
-                tekneleri ürettigimizden şüphemiz yoktur.İstediginiz zaman gelip
-                araçları inceleyebilirsiniz
+              {{getYacht.description}}
               </div>
               <div class="programm" id="genel">
-                <div class="day_item">
+                <div class="day_item" v-show="getYacht.owner || getYacht.desing || getYacht.class || getYacht.interiorDesign || getYacht.architect">
                   <div class="day_item-head">
                     <div class="preview">
                       <div class="p">{{ $t("main") }}</div>
@@ -94,18 +92,18 @@
                       text-align: left;
                     "
                   >
-                    <div class="text">Üretici: {{ getYacht.owner }}</div>
+                    <div class="text" v-show="getYacht.owner" >Üretici: {{ getYacht.owner }}</div>
                     <div class="text">
                       {{ getYacht.architect }}
                     </div>
-                    <div class="text">Dizayn: {{ getYacht.design }}</div>
-                    <div class="text">Mimar: {{ getYacht.interiorDesign }}</div>
-                    <div class="text">Sınıf: {{ getYacht.class }}</div>
+                    <div class="text" v-show="getYacht.design">Dizayn: {{ getYacht.design }}</div>
+                    <div class="text" v-show="getYacht.interiorDesign">Mimar: {{ getYacht.interiorDesign }}</div>
+                    <div class="text" v-show="getYacht.class">Sınıf: {{ getYacht.class }}</div>
                     <div class="text">Yıl: {{ getYacht.age }}</div>
                   </div>
                 </div>
 
-                <div class="day_item" id="temelBoyut">
+                <div class="day_item" id="temelBoyut" v-show="getYacht.loa || getYacht.lod || getYacht.boa || getYacht.draft || getYacht.deplasman ||  getYacht.speed">
                   <div class="day_item-head">
                     <div class="preview">
                       <div class="p">{{ $t("maindimentions") }}</div>
@@ -121,16 +119,16 @@
                       text-align: left;
                     "
                   >
-                    <div class="text">LOA: {{ getYacht.loa }}</div>
-                    <div class="text">LOD: {{ getYacht.lod }}</div>
-                    <div class="text">BOA: {{ getYacht.boa }}</div>
-                    <div class="text">Draft: {{ getYacht.draft }}</div>
-                    <div class="text">Deplasman: {{ getYacht.deplasman }}</div>
-                    <div class="text">Hız: {{ getYacht.speed }}</div>
+                    <div class="text" v-show="getYacht.loa">LOA: {{ getYacht.loa }}</div>
+                    <div class="text" v-show="getYacht.lod">LOD: {{ getYacht.lod }}</div>
+                    <div class="text" v-show="getYacht.boa">BOA: {{ getYacht.boa }}</div>
+                    <div class="text" v-show="getYacht.draft">Draft: {{ getYacht.draft }}</div>
+                    <div class="text" v-show="getYacht.deplasman">Deplasman: {{ getYacht.deplasman }}</div>
+                    <div class="text" v-show="getYacht.speed">Hız: {{ getYacht.speed }}</div>
                   </div>
                 </div>
 
-                <div class="day_item" id="yasamMahali">
+                <div class="day_item" id="yasamMahali"  v-show="getYacht.cabinArrangement || getYacht.passengerCapacity || getYacht.crewCapacity">
                   <div class="day_item-head">
                     <div class="preview">
                       <div class="p">{{ $t("livingspace") }}</div>
@@ -146,20 +144,20 @@
                       text-align: left;
                     "
                   >
-                    <div class="text">
+                    <div class="text" v-show="getYacht.cabinArrangement">
                       Kabin Düzenlemesi: {{ getYacht.cabinArrangement }}
                     </div>
-                    <div class="text">
-                      Yolcu Kapasitesi 10 : {{ getYacht.passengerCapacity }}
+                    <div class="text"  v-show="getYacht.passengerCapacity">
+                      Yolcu Kapasitesi : {{ getYacht.passengerCapacity }}
                     </div>
-                    <div class="text">
+                    <div class="text"  v-show="getYacht.crewCapacity">
                       Mürettebat Kapasitesi: {{ getYacht.crewCapacity }}
                     </div>
                   </div>
                 </div>
 
                 <div class="day_item">
-                  <div class="day_item-head" id="armaDonanimi">
+                  <div class="day_item-head" id="armaDonanimi" v-show="getYacht.mast || getYacht.main || getYacht.genova || getYacht.jib || getYacht.mizzen">
                     <div class="preview">
                       <div class="p">{{ $t("riggingandhardware") }}</div>
                     </div>
@@ -174,11 +172,11 @@
                       text-align: left;
                     "
                   >
-                    <div class="text">Mast: {{ getYacht.mast }}</div>
-                    <div class="text">Main: {{ getYacht.main }}</div>
-                    <div class="text">Genova: {{ getYacht.genova }}</div>
-                    <div class="text">Jib: {{ getYacht.jib }}</div>
-                    <div class="text">Mizzen: {{ getYacht.mizzen }}</div>
+                    <div class="text" v-show="getYacht.mast">Mast: {{ getYacht.mast }}</div>
+                    <div class="text" v-show="getYacht.main">Main: {{ getYacht.main }}</div>
+                    <div class="text" v-show="getYacht.genova">Genova: {{ getYacht.genova }}</div>
+                    <div class="text" v-show="getYacht.jib">Jib: {{ getYacht.jib }}</div>
+                    <div class="text" v-show="getYacht.mizzen">Mizzen: {{ getYacht.mizzen }}</div>
                   </div>
                 </div>
                 <div class="day_item" id="teknikBilgiler">
@@ -197,41 +195,41 @@
                       text-align: left;
                     "
                   >
-                    <div class="text">
+                    <div class="text" v-show="getYacht.manufacturingType">
                       İmalat Türü: {{ getYacht.manufacturingType }}
                     </div>
-                    <div class="text">Makine: {{ getYacht.machine }}</div>
-                    <div class="text">Vites: {{ getYacht.vites }}</div>
-                    <div class="text">Jeneratör: {{ getYacht.jeneratör }}</div>
-                    <div class="text">A/C: {{ getYacht.ac }}</div>
-                    <div class="text">
+                    <div class="text" v-show="getYacht.machine">Makine: {{ getYacht.machine }}</div>
+                    <div class="text" v-show="getYacht.vites">Vites: {{ getYacht.vites }}</div>
+                    <div class="text" v-show="getYacht.jeneratör">Jeneratör: {{ getYacht.jeneratör }}</div>
+                    <div class="text" v-show="getYacht.ac">A/C: {{ getYacht.ac }}</div>
+                    <div class="text" v-show="getYacht.electricSystem">
                       Elektrik Sistemi: {{ getYacht.electricSystem }}
                     </div>
-                    <div class="text">
+                    <div class="text" v-show="getYacht.helmStation" >
                       Dümen İstasyonu: {{ getYacht.helmStation }}
                     </div>
-                    <div class="text">
+                    <div class="text" v-show="getYacht.helmSystem">
                       Dümen Sistemi: {{ getYacht.helmSystem }}
                     </div>
-                    <div class="text">
+                    <div class="text" v-show="getYacht.navigation">
                       Navigasyon/Komunikasyon: {{ getYacht.navigation }}
                     </div>
-                    <div class="text">
+                    <div class="text" v-show="getYacht.sidePropeller">
                       Yan Pervane: {{ getYacht.sidePropeller }}
                     </div>
-                    <div class="text">Su Tankı: {{ getYacht.waterTank }}</div>
-                    <div class="text">
+                    <div class="text" v-show="getYacht.waterTank">Su Tankı: {{ getYacht.waterTank }}</div>
+                    <div class="text" v-show="getYacht.wasteWater">
                       Kirli Su Tankı: {{ getYacht.wasteWater }}
                     </div>
-                    <div class="text">
+                    <div class="text" v-show="getYacht.watermaker">
                       Su Üretici: {{ getYacht.watermaker }}
                     </div>
-                    <div class="text">
+                    <div class="text" v-show="getYacht.fuelTank">
                       Yakıt Deposu: {{ getYacht.fuelTank }}
                     </div>
                   </div>
                 </div>
-                <div class="day_item" id="guverteElemanlari">
+                <div class="day_item" id="guverteElemanlari" v-show="getYacht.loa || getYacht.lod || getYacht.boa || getYacht.draft || getYacht.deplasman ||  getYacht.speed">
                   <div class="day_item-head">
                     <div class="preview">
                       <div class="p">{{ $t("riggingandhardware") }}</div>
@@ -247,12 +245,32 @@
                       text-align: left;
                     "
                   >
-                    <div class="text">LOA: {{ getYacht.loa }}</div>
-                    <div class="text">LOD: {{ getYacht.lod }}</div>
-                    <div class="text">BOA: {{ getYacht.boa }}</div>
-                    <div class="text">Draft: {{ getYacht.draft }}</div>
-                    <div class="text">Deplasman: {{ getYacht.deplasman }}</div>
-                    <div class="text">Hız: {{ getYacht.speed }}</div>
+                      <div class="text" v-show="getYacht.loa">LOA: {{ getYacht.loa }}</div>
+                    <div class="text" v-show="getYacht.lod">LOD: {{ getYacht.lod }}</div>
+                    <div class="text" v-show="getYacht.boa">BOA: {{ getYacht.boa }}</div>
+                    <div class="text" v-show="getYacht.draft">Draft: {{ getYacht.draft }}</div>
+                    <div class="text" v-show="getYacht.deplasman">Deplasman: {{ getYacht.deplasman }}</div>
+                    <div class="text" v-show="getYacht.speed">Hız: {{ getYacht.speed }}</div>
+                  </div>
+                </div>
+                 <div class="day_item" id="guverteElemanlari" v-show="getYacht.note">
+                  <div class="day_item-head">
+                    <div class="preview">
+                      <div class="p">{{ $t("Note") }}</div>
+                    </div>
+                    <div class="_title"></div>
+                    <div class="element"></div>
+                  </div>
+                  <div
+                    class="day_item-body"
+                    style="
+                      display: block;
+                      justify-content: center;
+                      text-align: left;
+                    "
+                  >
+                      <div class="text" v-show="getYacht.note">{{ getYacht.note }}</div>
+                 
                   </div>
                 </div>
               </div>
@@ -379,7 +397,7 @@
               </div>
             </div> -->
           </div>
-          <div class="right_content sidebar">
+          <div class="right_content sidebar" style="margin-top:5%">
             <div class="navigation" id="sidebar-navigation">
               <ul>
                 <li>

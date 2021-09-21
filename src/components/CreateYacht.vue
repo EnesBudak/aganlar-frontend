@@ -14,6 +14,15 @@
    <el-form-item label="Yat Adı">
     <el-input v-model="yacht.owner"></el-input>
   </el-form-item>
+   <el-form-item label="Açıklama">
+    <el-input
+  type="textarea"
+  :autosize="{ minRows: 2, maxRows: 4}"
+  placeholder="Açıklamayı Giriniz"
+  v-model="yacht.description"
+>
+</el-input>
+  </el-form-item>
    <el-form-item label="Ücret">
     <el-input v-model="yacht.price"></el-input>
   </el-form-item>
@@ -110,7 +119,15 @@
     <el-form-item label="Yakıt Deposu">
     <el-input v-model="yacht.fuelTank"></el-input>
   </el-form-item>
-    
+     <el-form-item label="Notlar">
+    <el-input
+  type="textarea"
+  :autosize="{ minRows: 2, maxRows: 4}"
+  placeholder="Not Giriniz"
+  v-model="yacht.note"
+>
+</el-input>
+  </el-form-item>
   
   <el-form-item label="Aktif mi ?">
     <el-switch v-model="yacht.active"></el-switch>
@@ -171,6 +188,7 @@ export default {
           owner: '',
           categoryType: '',
           price: '',
+          description:'',
           design: '',
           interiorDesign: '',
           class: '',
@@ -206,7 +224,8 @@ export default {
           fuelTank: '',
           active:true,
           desc:'',
-          resource:''
+          resource:'',
+          note:''
         },
       }
     },
