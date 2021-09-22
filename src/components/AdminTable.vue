@@ -41,9 +41,10 @@
       <el-option label="Refit" value="refit"></el-option>
     </el-select>
   </el-form-item>
-   <el-form-item label="Yat Adı">
+   <el-form-item label="Yat Üreticisi">
     <el-input v-model="yacht.owner"></el-input>
   </el-form-item>
+
    <el-form-item label="Açıklama">
     <el-input
   type="textarea"
@@ -60,6 +61,9 @@
     <el-input v-model="yacht.design"></el-input>
   </el-form-item>
    <el-form-item label="Mimar">
+    <el-input v-model="yacht.architect"></el-input>
+  </el-form-item>
+   <el-form-item label="İç Mimar">
     <el-input v-model="yacht.interiorDesign"></el-input>
   </el-form-item>
    <el-form-item label="Sınıf">
@@ -186,6 +190,7 @@ import axios from 'axios'
         search: '',
            yacht: {
              _id:'',
+             architect:'',
           name: '',
           owner: '',
           categoryType: '',
