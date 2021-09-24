@@ -72,6 +72,9 @@
    <el-form-item label="Sınıf">
     <el-input v-model="yacht.class"></el-input>
   </el-form-item>
+   <el-form-item label="Model">
+    <el-input v-model="yacht.age"></el-input>
+  </el-form-item>
    <el-form-item label="Loa">
     <el-input v-model="yacht.loa"></el-input>
   </el-form-item>
