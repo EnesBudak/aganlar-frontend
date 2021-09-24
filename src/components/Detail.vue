@@ -229,7 +229,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="day_item" id="guverteElemanlari" v-show="getYacht.loa || getYacht.lod || getYacht.boa || getYacht.draft || getYacht.deplasman ||  getYacht.speed">
+                <div class="day_item" id="guverteElemanlari" v-show="getYacht.mast || getYacht.main || getYacht.genova || getYacht.jib || getYacht.mizzen">
                   <div class="day_item-head">
                     <div class="preview">
                       <div class="p">{{ $t("riggingandhardware") }}</div>
