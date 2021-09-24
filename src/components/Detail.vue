@@ -245,12 +245,12 @@
                       text-align: left;
                     "
                   >
-                      <div class="text" v-show="getYacht.loa">LOA: {{ getYacht.loa }}</div>
-                    <div class="text" v-show="getYacht.lod">LOD: {{ getYacht.lod }}</div>
-                    <div class="text" v-show="getYacht.boa">BOA: {{ getYacht.boa }}</div>
-                    <div class="text" v-show="getYacht.draft">Draft: {{ getYacht.draft }}</div>
-                    <div class="text" v-show="getYacht.deplasman">Deplasman: {{ getYacht.deplasman }}</div>
-                    <div class="text" v-show="getYacht.speed">Hız: {{ getYacht.speed }}</div>
+                      <div class="text" v-show="getYacht.mast">MAST: {{ getYacht.mast }}</div>
+                    <div class="text" v-show="getYacht.main">MAIN: {{ getYacht.main }}</div>
+                    <div class="text" v-show="getYacht.genova">GENOVA: {{ getYacht.genova }}</div>
+                    <div class="text" v-show="getYacht.jib">JIB: {{ getYacht.jib }}</div>
+                    <div class="text" v-show="getYacht.mizzen">MIZZEN: {{ getYacht.mizzen }}</div>
+                 
                   </div>
                 </div>
                  <div class="day_item" id="guverteElemanlari" v-show="getYacht.note">
