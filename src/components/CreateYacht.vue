@@ -26,6 +26,9 @@
    <el-form-item label="Ücret">
     <el-input v-model="yacht.price"></el-input>
   </el-form-item>
+  <el-form-item label="Döviz">
+    <el-input v-model="yacht.currency"></el-input>
+  </el-form-item>
    <el-form-item label="Dizayn">
     <el-input v-model="yacht.design"></el-input>
   </el-form-item>
@@ -188,6 +191,7 @@ export default {
           owner: '',
           categoryType: '',
           price: '',
+          currency:'',
           description:'',
           design: '',
           interiorDesign: '',
