@@ -39,9 +39,9 @@
                 <h3 class="_title">{{ yacht.name }}</h3>
                 <div class="_info">
                   <div class="_info_left">
-                     <div class="cost" v-show="yacht.price && yacht.price != '0'">{{ yacht?.price }} {{yacht?.currency}} </div>
-                    <div class="days">{{ yacht.age }} Model</div>
-                    <div class="days">{{ yacht.loa }} LOA</div>
+                    <div class="cost" v-show="yacht.price && yacht.price != '0'">{{ yacht?.price }} {{yacht?.currency}} | </div>
+                    <div class="cost">{{ yacht.age }} Model |</div>
+                    <div class="cost">{{ yacht.loa }} LOA |</div>
                     <div class="cost">
                       {{ yacht.passengerCapacity }} {{ $t("guests") }}
                     </div>
