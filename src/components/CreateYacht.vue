@@ -11,7 +11,7 @@
       <el-option label="Refit" value="refit"></el-option>
     </el-select>
   </el-form-item>
-   <el-form-item label="Yat Adı">
+   <el-form-item label="Üretici">
     <el-input v-model="yacht.owner"></el-input>
   </el-form-item>
    <el-form-item label="Açıklama">
