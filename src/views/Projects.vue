@@ -96,12 +96,12 @@ export default {
         {
           name: "Devam Edenler",
           url: "continuingprojects/?type=contiuningprojects",
-          imageUrl: "/assets/img/thumbnail-proje-devam.png",
+          imageUrl: "https://villauploads.s3.amazonaws.com/artemisia.jpg",
         },
         {
           name: "Yeni Projeler",
           url: "newprojects/?type=newprojects",
-          imageUrl: "/assets/img/thumbnail-proje-yeni.png",
+          imageUrl: "https://villauploads.s3.amazonaws.com/Untitled.jpg",
         },
       ],
     };
